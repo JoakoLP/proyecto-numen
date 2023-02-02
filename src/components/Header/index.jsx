@@ -1,9 +1,8 @@
 import React from 'react'
-import './styles.css'
 
 const Header = () => {
   return (
-    <div className="test">Header</div>
+    <div className="py-12 bg-sky-500">Header</div>
   )
 }
 
