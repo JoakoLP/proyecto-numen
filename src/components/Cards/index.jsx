@@ -1,10 +1,15 @@
-import React from 'react'
-import './styles.css'
+import React from "react";
+import { items } from "./constants";
+import * as styles from "./styles";
 
 const Cards = () => {
   return (
-    <div className="test-blue">Cards</div>
-  )
-}
+    <div className={styles.CONTAINER}>
+      {items.map((item) => (
+        <p className={styles.CARD}>{item.texto}</p>
+      ))}
+    </div>
+  );
+};
 
-export default Cards
+export default Cards;
