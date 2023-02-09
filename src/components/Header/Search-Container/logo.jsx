@@ -3,15 +3,15 @@
 import React from "react";
 import * as styles from "./styles";
 
-const Logo = () =>{
-    return (
-        <div>
-            <div className={styles.titleTxt}>
-                <span>Maximus</span>
-                <span className={styles.subtitleTxt}>Gaming Hardware</span>
-            </div>
-        </div>
-    )
-}
+const Logo = () => {
+  return (
+    <div>
+      <div className={styles.titleTxt}>
+        <span>Maximus</span>
+        <span className={styles.subtitleTxt}>Gaming Hardware</span>
+      </div>
+    </div>
+  );
+};
 
 export default Logo;
