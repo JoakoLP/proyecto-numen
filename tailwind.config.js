@@ -61,7 +61,8 @@ module.exports = {
         "250px": "250px",
       },
       colors: {
-        "dark-gray": "rgb(20,20,20)",
+        "dark-gray": "rgb(30,30,30)",
+        "darker-gray": "rgb(20,20,20)",
       },
     },
   },

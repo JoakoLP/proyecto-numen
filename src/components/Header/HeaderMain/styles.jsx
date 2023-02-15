@@ -12,8 +12,8 @@ export const formContainer =
 
 export const search = "w-full h-full relative block m-auto self-center";
 export const searchForm =
-  "w-65% m-auto flex justify-between border border-white-0 rounded-lg py-5px px-7px bg-dark-gray items-center";
+  "w-65% m-auto flex justify-between border border-white-0 rounded-lg py-5px px-7px bg-darker-gray items-center";
 export const searchTxt =
-  " text-slate-300 w-full bg-dark-gray h-full border-none outline-0 text-sm placeholder:text-purple-500 placeholder:opacity-40";
+  " text-slate-300 w-full bg-darker-gray h-full border-none outline-0 text-sm placeholder:text-purple-500 placeholder:opacity-40";
 export const lupa = "bg-purple-700 rounded-10px border-none";
 export const lupaImg = "h-22px w-22px m-0.7em max-w-22px max-h-22px";
