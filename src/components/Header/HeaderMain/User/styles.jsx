@@ -1,9 +1,11 @@
 export const user = "flex w-10% h-full justify-end items-center min-w-215px";
 
-export const account = "flex w-78% justify-center items-center mx-4";
+export const account =
+  "flex w-78% justify-center items-center mx-4 cursor-pointer";
 
 // reemplazado por props.
-// export const cart = "flex w-9/12 justify-center items-center ml-2"
+export const cart =
+  "flex w-78% justify-center items-center mx-4 cursor-pointer";
 
 export const imgUser = "h-25px w-25px min-w-25px max-w-25px";
 
