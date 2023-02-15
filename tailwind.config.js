@@ -33,7 +33,7 @@ module.exports = {
         "60px": "60px",
         "140px": "140px",
         "170px": "170px",
-        // '220px': '220px',
+        "700px": "700px",
         "0.7em": "0.7em",
         "3%": "3%",
         "10%": "10%",
@@ -56,6 +56,12 @@ module.exports = {
       },
       minWidth: {
         "215px": "215px",
+      },
+      minHeight: {
+        "250px": "250px",
+      },
+      colors: {
+        "dark-gray": "rgb(20,20,20)",
       },
     },
   },
