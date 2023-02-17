@@ -1,9 +1,10 @@
 import React from "react";
 import * as styles from "./styles";
+import { useDisableBodyScroll } from "./useDisableBodyScroll";
 
 const ModalContainer = ({ children, status, setStatus }) => {
+  useDisableBodyScroll(status);
   return (
-    // por qué se muestra debajo de los otros componentes aún teniendo z-50??
     <>
       {status && (
         <div
