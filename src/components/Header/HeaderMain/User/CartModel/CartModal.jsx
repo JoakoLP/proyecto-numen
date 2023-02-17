@@ -17,7 +17,6 @@ const CartModal = () => {
       <ModalContainer status={modalStatus} setStatus={setModalStatus}>
         <Cart />
       </ModalContainer>
-      {/* <ModalScrollBlock status={modalStatus} /> */}
     </>
   );
 };
