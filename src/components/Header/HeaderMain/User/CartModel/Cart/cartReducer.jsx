@@ -8,6 +8,14 @@ export const initialState = {
 
 export function cartReducer(state, action) {
   switch (action.type) {
+    case TYPES.READ_STATE: {
+      //actualiza el estado del carrito
+      return {
+        ...state,
+        products: action.payload[0],
+        cart: action.payload[1],
+      };
+    }
     case TYPES.ADD_TO_CART: {
       //agregar a carrito
       return;
