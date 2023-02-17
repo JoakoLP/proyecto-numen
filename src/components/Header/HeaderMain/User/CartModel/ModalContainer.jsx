@@ -1,9 +1,11 @@
 import React from "react";
 import * as styles from "./styles";
 import { useDisableBodyScroll } from "./useDisableBodyScroll";
+import { useEscapeToClose } from "./useEscapeToClose";
 
 const ModalContainer = ({ children, status, setStatus }) => {
   useDisableBodyScroll(status);
+  useEscapeToClose(status, setStatus);
   return (
     <>
       {status && (
