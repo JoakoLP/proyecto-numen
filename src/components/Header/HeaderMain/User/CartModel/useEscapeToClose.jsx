@@ -3,7 +3,6 @@ export const useEscapeToClose = (status, setStatus) => {
     const close = (esc) => {
       if (esc.key === "Escape") {
         window.removeEventListener("keydown", close, true);
-        console.log("a");
         setStatus(false);
       }
     };
