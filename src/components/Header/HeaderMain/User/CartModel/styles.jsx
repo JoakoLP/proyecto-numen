@@ -1,5 +1,5 @@
 export const overlay =
-  "w-full h-full fixed top-0 left-0 flex items-center justify-center p-10";
+  "w-full h-full fixed top-0 left-0 flex items-center justify-center p-10 z-20";
 
 export const modCont =
   "w-700px min-h-250px h-max bg-white bg-darker-gray relative rounded-lg p-5";
