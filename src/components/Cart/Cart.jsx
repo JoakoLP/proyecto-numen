@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 import { TYPES } from "./actions";
 import { initialState, cartReducer } from "./cartReducer";
+
 // import * as styles from "./styles";
 
 const Cart = () => {
@@ -10,10 +11,22 @@ const Cart = () => {
 
   const updateState = async () => {};
 
+  // const addToCart=()={};
+
+  // const removeItemFromCart=()={};
+
+  // const removeAllItemsFromCart=()={};
+
+  // const clearCart=()={};
+
   return (
     <div>
-      <h2 style={{ color: "white" }}>Productos</h2>
-      <div>{/* {cart.map((product) => ())} */}</div>
+      <h2 style={{ color: "white" }}>Su pedido:</h2>
+      <div>
+        {/* {products.map((product) => (
+          <Product key={product.id} data={product} />
+        ))} */}
+      </div>
       {/* <button onClick={dispatch()}></button> */}
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalContainer from "./ModalContainer";
 import imgCart from "../../../../../img/fi-rr-shopping-cart.svg";
 import * as styles from "../styles";
-import Cart from "./Cart/Cart";
+import Cart from "../../../../Cart/Cart";
 
 const CartModal = () => {
   const [modalStatus, setModalStatus] = useState(false);
