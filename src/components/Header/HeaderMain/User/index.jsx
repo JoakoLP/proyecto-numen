@@ -7,10 +7,10 @@ import * as styles from "./styles";
 
 const Preset = (props) => {
   return (
-    <a className={styles.account}>
+    <div className={styles.account}>
       <img src={props.img} alt="" className={styles.imgUser} />
       <span className={styles.userText}>{props.txt}</span>
-    </a>
+    </div>
   );
 };
 

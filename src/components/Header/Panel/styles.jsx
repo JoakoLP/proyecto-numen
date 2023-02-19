@@ -7,7 +7,7 @@ export const panel =
 export const pcCont = "box-border block m-auto w-140px relative";
 
 export const pc =
-  "relative flex box-border px-4 py-2 text-white font-bold m-auto z-10";
+  "relative flex box-border px-4 py-2 text-white font-bold m-auto z-10 cursor-pointer";
 
 export const pcTxt = "m-auto";
 
