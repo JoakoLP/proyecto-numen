@@ -19,7 +19,10 @@ const CartItem = ({ data, addToCart, deleteFromCart, deleteAllItems }) => {
     <div className={styles.itemCont}>
       <div className={styles.imgTitle} title={data.name}>
         <img className={styles.itemImg} src={data.image} />
-        <span className={styles.itemTitle}>{data.name}</span>
+        <div className={styles.itemTitle}>
+          <span>{data.name}</span>
+          <span className={styles.price}>Unidad: ${data.price}</span>
+        </div>
       </div>
       <div className={styles.priceQuant}>
         <div className={styles.qttySect}>
@@ -42,7 +45,7 @@ const CartItem = ({ data, addToCart, deleteFromCart, deleteAllItems }) => {
           </button>
         </div>
         <div className={styles.priceSub}>
-          <span className={styles.price}>Unidad: ${data.price}</span>
+          {/* <span className={styles.price}>Unidad: ${data.price}</span> */}
           <span className={styles.subTot}>
             Subtotal: ${data.price * data.quantity}
           </span>
