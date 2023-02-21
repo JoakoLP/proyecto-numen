@@ -3,7 +3,7 @@ export const emptyCart =
 export const empCarTxt = "h-min text-purple-700";
 export const cartTitle = "text-purple-700 text-base";
 export const cart =
-  "overflow-y-auto min-h-full max-h-[75vh] min-w-full max-w-full flex flex-col justify-between";
+  "overflow-y-auto min-h-min max-h-[75vh] min-w-full max-w-full flex flex-col justify-between";
 export const itemCont =
   "text-white py-5 p-2.5 border-purple-700 border-t-[1px] flex rounded-lga flex-row items-center justify-between min-h-[15vh] min-w-min max-w-full";
 export const imgTitle = "flex min-w-[40%] justify-start items-start h-min";

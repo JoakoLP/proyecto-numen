@@ -2,7 +2,6 @@ import React from "react";
 import * as styles from "./styles";
 
 const CartItem = ({ data, deleteFromCart }) => {
-  // let { id, name, price } = props;
   return (
     <div className={styles.itemCont}>
       <div className={styles.imgTitle}>
@@ -15,12 +14,10 @@ const CartItem = ({ data, deleteFromCart }) => {
           <span className={styles.price}>Unidad: ${data.price}</span>
           <span className={styles.subTot}>
             Subtotal: ${data.price * data.quantity}
-            {/* {console.log(data.price * data.quantity)} */}
           </span>
         </div>
         <button
           onClick={() => {
-            console.log(data.id);
             deleteFromCart(data.id);
           }}
           title="Eliminar del carrito."

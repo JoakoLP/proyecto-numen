@@ -14,6 +14,6 @@ export const closeBtn =
 export const closeBtnX = "w-30px h-30px";
 
 export const childrenCont =
-  "p-4 min-h-[180px] min-h-[40vh] rounded-b -lg bg-dark-gray flex flex-col justify-between items-center"; //bg-white
+  "p-4 min-h-[45vh] box-content rounded-b -lg bg-dark-gray flex flex-col justify-between items-center"; //bg-white
 
 // export const = "";

@@ -30,15 +30,11 @@ const ModalContainer = ({ children, status, setStatus }) => {
             className={styles.modCont}
             style={{ boxShadow: "rgba(100,100,111, 0.2) 0px 7px 29px 0px" }}
           >
-            <div
-              className={styles.modHeader}
-              // style={{ borderBottom: "1px solid #E8E8E8" }}
-            >
+            <div className={styles.modHeader}>
               <h3 className={styles.modTitle}>Carrito de Compras</h3>
             </div>
             <button
               className={styles.closeBtn}
-              // style={{ color: "#1766DC" }}
               onClick={() => setStatus(!status)}
             >
               <span className="flex flex-wrap content-center px-[1px]">

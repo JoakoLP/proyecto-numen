@@ -1,7 +1,5 @@
-import React, { useContext, useReducer } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../../contexts/CartProvider";
-import { TYPES } from "./actions";
-import { initialState, cartReducer } from "./cartReducer";
 import CartItem from "./CartItem";
 import * as styles from "./styles";
 
@@ -9,7 +7,6 @@ import * as styles from "./styles";
 const Cart = () => {
   const [state, dispatch, actions] = useContext(CartContext);
   const { products, cart, total } = state;
-  console.log(total);
 
   if (cart.length === 0) {
     return (
@@ -20,7 +17,6 @@ const Cart = () => {
   } else {
     return (
       <>
-        {/* <h2 className={styles.cartTitle}>Su pedido:</h2> */}
         <div className={styles.cart}>
           {/* {console.log(cart)} */}
           {cart.map((item) => (
@@ -30,7 +26,6 @@ const Cart = () => {
               deleteFromCart={actions.deleteFromCart}
             />
           ))}
-          {/* <span>{cart.map((item) => (total = total + item.price))}</span> */}
         </div>
         <p className={styles.total}>TOTAL: ${total}</p>
       </>
