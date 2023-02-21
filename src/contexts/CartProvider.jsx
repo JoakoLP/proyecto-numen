@@ -17,6 +17,16 @@ const CartProvider = ({ children }) => {
       console.log(`Producto de id "${id}" eliminado del carrito.`);
       dispatch({ type: TYPES.REMOVE_ITEM, payload: id });
     },
+    deleteAllItems: (id) => {
+      console.log(
+        `Todos los productos de id "${id}" fueron eliminados del carrito.`
+      );
+      dispatch({ type: TYPES.REMOVE_ALL_ITEMS, payload: id });
+    },
+    clearCart: (id) => {
+      console.log(`Carrito vaciado.`);
+      dispatch({ type: TYPES.CLEAR_CART, payload: id });
+    },
   };
 
   return (

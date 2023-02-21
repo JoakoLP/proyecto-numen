@@ -150,11 +150,11 @@ const cartReducer = (state, action) => {
             count: parseFloat(state.count) - 1,
           };
     }
-    case TYPES.REMOVE_ALL_ITEMS: {
-      //eliminar todos los items de 1 MISMO tipo
-      break;
-      // return;
-    }
+    // case TYPES.REMOVE_ALL_ITEMS: {
+    //   //eliminar todos los items de 1 MISMO tipo
+    //   break;
+    //   // return;
+    // }
     case TYPES.CLEAR_CART: {
       //eliminar todos los items / limpiar carrito
       return initialState;
