@@ -4,8 +4,7 @@ export const overlay =
 export const modCont =
   "min-w-[60vw] max-w-[90vw] min-h-250px max-h-[90vh] overflow-hidden h-max bg-white bg-darker-gray relative rounded-lg p-5";
 
-export const modHeader =
-  "flex items-center content-between pb-2 pl-2 border-b border-b-purple-700";
+export const modHeader = "flex items-center content-between pb-2 pl-2";
 
 export const modTitle = "font-medium text-lg text-purple-700";
 

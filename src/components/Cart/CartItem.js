@@ -10,7 +10,7 @@ const CartItem = ({ data, deleteFromCart }) => {
         <span className={styles.itemTitle}>{data.name}</span>
       </div>
       <div className={styles.priceQuant}>
-        <span className={styles.quantity}>Cantidad: {data.quantity}</span>
+        <span className={styles.quantity}>{data.quantity}</span>
         <div className={styles.priceSub}>
           <span className={styles.price}>Unidad: ${data.price}</span>
           <span className={styles.subTot}>
@@ -24,6 +24,7 @@ const CartItem = ({ data, deleteFromCart }) => {
             deleteFromCart(data.id);
           }}
           title="Eliminar del carrito."
+          className={styles.dltButton}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
