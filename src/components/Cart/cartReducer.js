@@ -83,6 +83,7 @@ const initialState = {
   ],
   cart: [],
   total: 0,
+  count: 0,
 };
 
 const cartReducer = (state, action) => {
@@ -115,12 +116,14 @@ const cartReducer = (state, action) => {
             ),
             // total: newTotal,
             total: parseFloat(state.total) + parseFloat(newItem.price),
+            count: parseFloat(state.count) + 1,
           }
         : {
             ...state,
             cart: [...state.cart, { ...newItem, quantity: 1 }],
             // total: newTotal,
             total: parseFloat(state.total) + parseFloat(newItem.price),
+            count: parseFloat(state.count) + 1,
           };
 
       // return { ...state, cart: [...state.cart, newItem] };
@@ -138,11 +141,13 @@ const cartReducer = (state, action) => {
                 : item
             ),
             total: parseFloat(state.total) - parseFloat(itemToDelete.price),
+            count: parseFloat(state.count) - 1,
           }
         : {
             ...state,
             cart: state.cart.filter((item) => item.id !== action.payload),
             total: parseFloat(state.total) - parseFloat(itemToDelete.price),
+            count: parseFloat(state.count) - 1,
           };
     }
     case TYPES.REMOVE_ALL_ITEMS: {
