@@ -150,11 +150,18 @@ const cartReducer = (state, action) => {
             count: parseFloat(state.count) - 1,
           };
     }
-    // case TYPES.REMOVE_ALL_ITEMS: {
-    //   //eliminar todos los items de 1 MISMO tipo
-    //   break;
-    //   // return;
-    // }
+    case TYPES.REMOVE_ALL_ITEMS: {
+      //eliminar todos los items de 1 MISMO tipo
+      let itemToDelete = state.cart.find((item) => item.id === action.payload);
+      let itemToDeletePrice = itemToDelete.price * itemToDelete.quantity;
+
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item.id !== action.payload),
+        total: parseFloat(state.total) - itemToDeletePrice,
+        count: parseFloat(state.count) - parseFloat(itemToDelete.quantity),
+      };
+    }
     case TYPES.CLEAR_CART: {
       //eliminar todos los items / limpiar carrito
       return initialState;
