@@ -11,21 +11,21 @@ const Product = (props) => {
   return (
     <div
       key={data.id}
-      className="duration-300 border rounded-lg shadow-lg hover:scale-105"
+      className="flex flex-col justify-between p-2 duration-300 border rounded-lg shadow-lg hover:scale-105"
     >
       <img
-        src={data.image}
+        src={data.img}
         alt={data.name}
-        className="w-full h-[200px] object-contain rounded-t-lg"
+        className="w-full h-[200px] object-contain rounded-t-lg truncate"
       />
 
-      <div className="flex flex-col justify-between px-2 py-4 space-y-4 text-center">
-        <p className="font-bold">{data.name}</p>
-        <p>
-          <span className="p-1 font-bold text-black rounded-full ">
-            {data.price}
-          </span>
+      <div className="flex flex-col h-[45%] justify-end px-2 py-4 space-y-4 text-center">
+        <p className="font-bold h-[35%] text-ellipsis overflow-hidden hover:overflow-visible">
+          {data.name}
         </p>
+        <span className="pt-2 font-bold text-black rounded-full ">
+          ${data.price}
+        </span>
         <button
           onClick={() => {
             actions.addToCart(data.id);

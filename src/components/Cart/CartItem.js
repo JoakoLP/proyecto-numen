@@ -18,7 +18,7 @@ const CartItem = ({ data, addToCart, deleteFromCart, deleteAllItems }) => {
   return (
     <div className={styles.itemCont}>
       <div className={styles.imgTitle} title={data.name}>
-        <img className={styles.itemImg} src={data.image} />
+        <img className={styles.itemImg} src={data.img} />
         <div className={styles.itemTitle}>
           <span>{data.name}</span>
           <span className={styles.price}>Unidad: ${data.price}</span>

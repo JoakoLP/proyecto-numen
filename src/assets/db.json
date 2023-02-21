@@ -312,45 +312,277 @@
       "reputation": 1
     },
     {
-      "id": 2,
-      "name": "",
-      "price": 0,
-      "category": "",
-      "subCategory": "",
+      "id": 28,
+      "name": "MOTHER GIGABYTE A520M S2H AM4",
+      "price": 23337,
+      "category": "Motherboards",
+      "subCategory": "AMD AM4",
       "desc": null,
-      "img": "",
+      "img": "https://i.imgur.com/pnRw00b.png",
+      "reputation": 2
+    },
+    {
+      "id": 29,
+      "name": "MOTHER MSI B450M PRO-VDH MAX BOX M-ATX AM4",
+      "price": 24134,
+      "category": "Motherboards",
+      "subCategory": "AMD AM4",
+      "desc": null,
+      "img": "https://i.imgur.com/Zdl8qeS.png",
+      "reputation": 2
+    },
+    {
+      "id": 30,
+      "name": "MOTHER MSI X470 GAMING PLUS MAX AM4",
+      "price": 35305,
+      "category": "Motherboards",
+      "subCategory": "AMD AM4",
+      "desc": null,
+      "img": "https://i.imgur.com/wvVqfTJ.png",
+      "reputation": 3
+    },
+    {
+      "id": 31,
+      "name": "MOTHER GIGABYTE B550M AORUS ELITE AM4",
+      "price": 48739,
+      "category": "Motherboards",
+      "subCategory": "AMD AM4",
+      "desc": null,
+      "img": "https://i.imgur.com/AaOGcTO.png",
       "reputation": 4
     },
     {
-      "id": 2,
-      "name": "",
-      "price": 0,
-      "category": "",
-      "subCategory": "",
+      "id": 32,
+      "name": "MOTHER MSI B550 MPG GAMING PLUS AM4",
+      "price": 81472,
+      "category": "Motherboards",
+      "subCategory": "AMD AM4",
       "desc": null,
-      "img": "",
+      "img": "https://i.imgur.com/9ZlXvLh.jpg",
+      "reputation": 5
+    },
+    {
+      "id": 33,
+      "name": "MOTHER ASUS B550-F ROG STRIX GAMING WIFI BOX ATX AM4",
+      "price": 101418,
+      "category": "Motherboards",
+      "subCategory": "AMD AM4",
+      "desc": null,
+      "img": "https://i.imgur.com/DIQU4qT.jpg",
+      "reputation": 5
+    },
+    {
+      "id": 34,
+      "name": "Mother Asrock  H610M-HDV INTEL LGA1700 12ava Gen",
+      "price": 27645,
+      "category": "Motherboards",
+      "subCategory": "LGA 1700",
+      "desc": null,
+      "img": "https://i.imgur.com/Tv9OTnX.png",
+      "reputation": 1
+    },
+    {
+      "id": 35,
+      "name": "MOTHER INTEL GIGABYTE H610M S2H DDR4 LGA1700",
+      "price": 35424,
+      "category": "Motherboards",
+      "subCategory": "LGA 1700",
+      "desc": null,
+      "img": "https://i.imgur.com/HmYB8lf.png",
+      "reputation": 2
+    },
+    {
+      "id": 36,
+      "name": "MOTHER GIGABYTE B660M DS3H AX DDR4 1.2 LGA1700 12VA",
+      "price": 57029,
+      "category": "Motherboards",
+      "subCategory": "LGA 1700",
+      "desc": null,
+      "img": "https://i.imgur.com/Ajj6qRB.jpg",
+      "reputation": 3
+    },
+    {
+      "id": 37,
+      "name": "MOTHER GIGABYTE Z690 GAMINGX GEN12 INTEL",
+      "price": 78265,
+      "category": "Motherboards",
+      "subCategory": "LGA 1700",
+      "desc": null,
+      "img": "https://i.imgur.com/NnP6v0l.png",
       "reputation": 4
     },
     {
-      "id": 2,
-      "name": "",
-      "price": 0,
-      "category": "",
-      "subCategory": "",
+      "id": 38,
+      "name": "MOTHER GIGABYTE B660M A PRO AX DDR4 LGA1700",
+      "price": 94306,
+      "category": "Motherboards",
+      "subCategory": "LGA 1700",
       "desc": null,
-      "img": "",
+      "img": "https://i.imgur.com/IMjh3xw.png",
+      "reputation": 5
+    },
+    {
+      "id": 39,
+      "name": "MOTHER ASUS ROG STRIX Z690-E GAMING WIFI D5 BOX LGA1700",
+      "price": 130415,
+      "category": "Motherboards",
+      "subCategory": "LGA 1700",
+      "desc": null,
+      "img": "https://i.imgur.com/154FaCh.jpg",
+      "reputation": 5
+    },
+    {
+      "id": 40,
+      "name": "Memoria DDR4 8Gb 2400 Kingston HyperX Fury Black",
+      "price": 17799,
+      "category": "RAM",
+      "subCategory": null,
+      "desc": null,
+      "img": "https://i.imgur.com/XWZWq2m.jpg",
+      "reputation": 3
+    },
+    {
+      "id": 41,
+      "name": "Memoria Ram DDR4 - 16Gb 2X8 3200 Mhz Pny XLR8 Gaming Epic-x Rgb Plateado",
+      "price": 31799,
+      "category": "RAM",
+      "subCategory": null,
+      "desc": null,
+      "img": "https://i.imgur.com/h1sAwub.jpg",
       "reputation": 4
     },
     {
-      "id": 2,
-      "name": "",
-      "price": 0,
-      "category": "",
-      "subCategory": "",
+      "id": 42,
+      "name": "Memoria Ram DDR4 - 16Gb 2x8 3200 Mhz Corsair Vengance Rgb Pro Negro",
+      "price": 40999,
+      "category": "RAM",
+      "subCategory": null,
       "desc": null,
-      "img": "",
+      "img": "https://i.imgur.com/QVGakKx.png",
+      "reputation": 4
+    },
+    {
+      "id": 43,
+      "name": "Procesador Amd Ryzen 3 3200G 3.8 Ghz + Vega8 - AM4 Sin Cooler",
+      "price": 41999,
+      "category": "CPU",
+      "subCategory": "AMD",
+      "desc": null,
+      "img": "https://i.imgur.com/NzDHqIw.jpg",
+      "reputation": 3
+    },
+    {
+      "id": 44,
+      "name": "Procesador Amd Ryzen 5 5600G 4.4 Ghz - AM4",
+      "price": 73299,
+      "category": "CPU",
+      "subCategory": "AMD",
+      "desc": null,
+      "img": "https://i.imgur.com/AWAUgOf.jpg",
+      "reputation": 4
+    },
+    {
+      "id": 45,
+      "name": "Procesador Amd Ryzen 7 5800X 4.7 Ghz + Watercooler",
+      "price": 190998,
+      "category": "CPU",
+      "subCategory": "AMD",
+      "desc": null,
+      "img": "https://i.imgur.com/6Td9lkK.jpg",
+      "reputation": 5
+    },
+    {
+      "id": 46,
+      "name": "Procesador Amd Ryzen 9 5900X 4.8 Ghz + Watercooler",
+      "price": 249589,
+      "category": "CPU",
+      "subCategory": "AMD",
+      "desc": null,
+      "img": "https://i.imgur.com/LmERJXL.jpg",
+      "reputation": 4
+    },
+    {
+      "id": 47,
+      "name": "Procesador Intel Core i3 12100 4.3 Ghz Alder Lake 1700",
+      "price": 49989,
+      "category": "CPU",
+      "subCategory": "Intel",
+      "desc": null,
+      "img": "https://i.imgur.com/TOkuqgE.jpg",
+      "reputation": 3
+    },
+    {
+      "id": 48,
+      "name": "Procesador Intel Core i5 12600K 4.9 Ghz Alder Lake 1700 Sin Cooler",
+      "price": 115399,
+      "category": "CPU",
+      "subCategory": "Intel",
+      "desc": null,
+      "img": "https://i.imgur.com/EktKttB.jpg",
+      "reputation": 4
+    },
+    {
+      "id": 49,
+      "name": "Procesador Intel Core i7 13700K 5.4 Ghz Raptor Lake 1700 Sin Cooler",
+      "price": 201989,
+      "category": "CPU",
+      "subCategory": "Intel",
+      "desc": null,
+      "img": "https://i.imgur.com/eDJAJ6J.jpg",
+      "reputation": 5
+    },
+    {
+      "id": 50,
+      "name": "Placa De Video GeForce GT 1030 2Gb Gigabyte Low Profile DDR4",
+      "price": 49689,
+      "category": "GPU",
+      "subCategory": "NVIDIA",
+      "desc": null,
+      "img": "https://i.imgur.com/917WitE.jpg",
+      "reputation": 2
+    },
+    {
+      "id": 51,
+      "name": "Placa De Video LHR GeForce RTX 3050 8Gb Msi Ventus 2X Oc",
+      "price": 213999,
+      "category": "GPU",
+      "subCategory": "NVIDIA",
+      "desc": null,
+      "img": "https://i.imgur.com/DPpNdew.jpg",
+      "reputation": 4
+    },
+    {
+      "id": 52,
+      "name": "Placa De Video GeForce RTX 3070 Ti 8Gb Msi Ventus 3X Oc",
+      "price": 259989,
+      "category": "GPU",
+      "subCategory": "NVIDIA",
+      "desc": null,
+      "img": "https://i.imgur.com/nsvoUWH.jpg",
+      "reputation": 5
+    },
+    {
+      "id": 53,
+      "name": "Placa De Video Radeon RX 6500 XT 4Gb Sapphire Pulse Gaming Oc",
+      "price": 128999,
+      "category": "GPU",
+      "subCategory": "AMD",
+      "desc": null,
+      "img": "https://i.imgur.com/cZWrdW5.jpg",
+      "reputation": 3
+    },
+    {
+      "id": 54,
+      "name": "Placa De Video Radeon RX 6650 XT 8Gb Msi Mech 2X Oc",
+      "price": 164789,
+      "category": "GPU",
+      "subCategory": "AMD",
+      "desc": null,
+      "img": "https://i.imgur.com/eQ02nFs.jpg",
       "reputation": 4
     }
   ],
-  "cart": []
+  "cart": [],
+  "total": [0],
+  "count": [0]
 }
