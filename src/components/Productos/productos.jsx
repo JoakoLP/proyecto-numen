@@ -1,19 +1,13 @@
 import React, { useContext, useState } from "react";
-// import { data } from "./productoData";
 import Product from "./Product";
-// import { addToCart } from "../Cart/Cart";
-import Cart from "../Cart/Cart";
 import { CartContext } from "../../contexts/CartProvider";
-import CartProvider from "../../contexts/CartProvider";
 
 const Productos = () => {
   // useContext
   const [state, dispatch, actions] = useContext(CartContext);
   const data = state.products;
 
-  // console.log(state.products);
-  // console.log(dato);
-  console.log(data);
+  // console.log(data);
   const [products, setProducts] = useState(data);
 
   //   Filter

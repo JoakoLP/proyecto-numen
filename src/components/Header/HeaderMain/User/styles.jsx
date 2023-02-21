@@ -3,7 +3,6 @@ export const user = "flex w-10% h-full justify-end items-center min-w-215px";
 export const account =
   "flex w-78% justify-center items-center mx-4 cursor-pointer";
 
-// reemplazado por props.
 export const cart =
   "flex w-78% justify-center items-center mx-4 cursor-pointer";
 

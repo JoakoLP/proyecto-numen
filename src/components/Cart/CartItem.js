@@ -45,7 +45,6 @@ const CartItem = ({ data, addToCart, deleteFromCart, deleteAllItems }) => {
           </button>
         </div>
         <div className={styles.priceSub}>
-          {/* <span className={styles.price}>Unidad: ${data.price}</span> */}
           <span className={styles.subTot}>
             Subtotal: ${data.price * data.quantity}
           </span>

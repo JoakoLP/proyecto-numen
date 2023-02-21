@@ -9,6 +9,7 @@ export const CartContext = createContext();
 const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
+  // Por qué json-server tira error 404 manifest.json??
   // const updateState = async () => {
   //   const productsURL = "https://localhost:300/products";
   //   const cartURL = "https://localhost:300/cart";

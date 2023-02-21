@@ -592,7 +592,7 @@ const initialState = {
 const cartReducer = (state, action) => {
   switch (action.type) {
     case TYPES.READ_STATE: {
-      //actualiza el estado del carrito
+      //actualiza el estado del carrito, para usar con json-server
       return {
         ...state,
         products: action.payload[0],

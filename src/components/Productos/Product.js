@@ -6,7 +6,6 @@ const Product = (props) => {
 
   // useContext;
   const [state, dispatch, actions] = useContext(CartContext);
-  const { productos, cart } = state;
 
   return (
     <div
