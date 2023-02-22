@@ -63,6 +63,8 @@ module.exports = {
       colors: {
         "dark-gray": "rgb(30,30,30)",
         "darker-gray": "rgb(20,20,20)",
+        "fuchsia-icon": "rgb(196,36,255)",
+        "blue-icon": "rgb(28,108,255)",
       },
     },
   },
