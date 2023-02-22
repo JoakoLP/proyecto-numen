@@ -1,8 +1,13 @@
-import React, { useState } from "react";
-import { data } from "./productoData";
+import React, { useContext, useState } from "react";
+import Product from "./Product";
+import { CartContext } from "../../contexts/CartProvider";
 
 const Productos = () => {
-  //   console.log(data);
+  // useContext
+  const [state, dispatch, actions] = useContext(CartContext);
+  const data = state.products;
+
+  // console.log(data);
   const [products, setProducts] = useState(data);
 
   //   Filter
@@ -16,14 +21,14 @@ const Productos = () => {
 
   return (
     <div className="max-w-[1640px] m-auto px-4 py-4">
-      <h1 className="text-black font-bold text-4xl text-center">Componentes</h1>
+      <h1 className="text-4xl font-bold text-center text-black">Componentes</h1>
 
       {/* Filter Row */}
-      <div className="flex flex-col lg:flex-row justify-between">
+      <div className="flex flex-col justify-between lg:flex-row">
         {/* Fliter Type */}
         <div>
           <p className="font-bold text-white">Filtro por Categoria</p>
-          <div className="flex justfiy-between flex-wrap">
+          <div className="flex flex-wrap justfiy-between">
             <button
               onClick={() => setProducts(data)}
               className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2"
@@ -31,58 +36,49 @@ const Productos = () => {
               All
             </button>
             <button
-              onClick={() => filterType("microprocesador")}
+              onClick={() => filterType("CPU")}
               className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2 "
             >
               Microprocesador
             </button>
             <button
-              onClick={() => filterType("ram")}
+              onClick={() => filterType("RAM")}
               className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2 "
             >
               RAM
             </button>
             <button
-              onClick={() => filterType("motherboard")}
+              onClick={() => filterType("Motherboards")}
               className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2 "
             >
               Motherboard
             </button>
             <button
-              onClick={() => filterType("grafica")}
+              onClick={() => filterType("GPU")}
               className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2 "
             >
               Grafica
+            </button>
+            <button
+              onClick={() => filterType("Notebooks")}
+              className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2 "
+            >
+              Notebooks
+            </button>
+            <button
+              onClick={() => filterType("Desktop")}
+              className="m-1 border-[#8a4af3] text-black hover:bg-purple-900 hover:text-white rounded-full p-2 "
+            >
+              PC de Escritorio
             </button>
           </div>
         </div>
       </div>
 
       {/* display productos */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
-        {products.map((item, index) => (
-          <div
-            key={index}
-            className="border shadow-lg rounded-lg hover:scale-105 duration-300"
-          >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-[200px] object-contain rounded-t-lg"
-            />
-
-            <div className="flex flex-col justify-between px-2 py-4 text-center space-y-4">
-              <p className="font-bold">{item.name}</p>
-              <p>
-                <span className=" text-black text-black font-bold p-1 rounded-full">
-                  {item.price}
-                </span>
-              </p>
-              <button class="bg-[#8a4af3] hover:bg-purple-900  text-white font-bold sm:text-xs py-2 px-4 rounded-full">
-                Agregar al Carrito
-              </button>
-            </div>
-          </div>
+      <div className="grid grid-cols-2 gap-6 pt-4 lg:grid-cols-4">
+        {products.map((product) => (
+          <Product key={product.id} data={product} />
         ))}
       </div>
     </div>

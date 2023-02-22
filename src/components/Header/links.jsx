@@ -8,26 +8,26 @@ import * as styles from "./styles";
 const Links = () => {
   return (
     <div className={styles.linksCont}>
-      <a href="#" className={styles.link}>
+      <span href="#" className={styles.link}>
         <img src={shipImg} className={styles.linkImg} alt="" />
         Seguir mi Pedido UPS
-      </a>
-      <a href="#" className={styles.link}>
+      </span>
+      <span href="#" className={styles.link}>
         <img src={shipImg} className={styles.linkImg} alt="" />
         Seguir mi Pedido OCA
-      </a>
-      <a href="#" className={styles.link}>
+      </span>
+      <span href="#" className={styles.link}>
         <img src={docImg} className={styles.linkImg} alt="" />
         Subir Comprobantes
-      </a>
-      <a href="#" className={styles.link}>
+      </span>
+      <span href="#" className={styles.link}>
         <img src={formImg} className={styles.linkImg} alt="" />
         RMA - Garantia
-      </a>
-      <a href="#" className={styles.link}>
+      </span>
+      <span href="#" className={styles.link}>
         <img src={helpImg} className={styles.linkImg} alt="" />
         Ayuda
-      </a>
+      </span>
     </div>
   );
 };

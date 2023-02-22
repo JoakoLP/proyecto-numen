@@ -6,9 +6,9 @@ const Panel = () => {
     <div className={styles.panelCont}>
       <div className={styles.panel}>
         <div className={styles.pcCont}>
-          <a href="#" className={styles.pc}>
+          <span href="#" className={styles.pc}>
             <span className={styles.pcTxt}>ARMA TU PC</span>
-          </a>
+          </span>
           <span className={styles.pcBg}></span>
         </div>
       </div>
