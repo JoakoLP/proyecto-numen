@@ -52,8 +52,10 @@ const Cart = () => {
           >
             <span className={styles.clearCartBtn}>{clearCart}</span>
           </button>
-
-          <p className={styles.total}>TOTAL: ${total}</p>
+          <div className={styles.totalPagar}>
+            <p className={styles.total}>TOTAL: ${total}</p>
+            <button className={styles.pagarBtn}>Comprar</button>
+          </div>
         </div>
       </>
     );

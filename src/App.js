@@ -7,7 +7,7 @@ import CartProvider from "./contexts/CartProvider";
 
 function App() {
   return (
-    <div>
+    <div className="bg-dark-gray">
       <CartProvider>
         <Header />
         <div className="mt-[134px]">

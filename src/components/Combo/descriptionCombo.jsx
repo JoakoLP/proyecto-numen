@@ -2,7 +2,7 @@ import React from "react";
 
 function DescriptionCombo() {
   return (
-    <div className="m-10 h-96 w-[350px] self-center">
+    <div className="m-10 h-96 w-[350px] self-center flex items-center justify-center flex-col text-white">
       <h2 className="my-5 text-3xl font-bold text-center">
         Combo AGILIZÁ TU PC
       </h2>
@@ -15,7 +15,7 @@ function DescriptionCombo() {
         <li>Memoria RAM Fury Beast Kingston</li>
       </ul>
       <p className="my-5 text-xl font-bold text-center">$$$$</p>
-      <button className="content-center p-1 mx-32 my-2 text-center text-white rounded-full px-7 bg-fuchsia-icon">
+      <button className="text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800">
         Agregar al carrito
       </button>
     </div>

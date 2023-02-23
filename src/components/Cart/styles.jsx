@@ -23,14 +23,19 @@ export const priceSub =
   "whitespace-nowrap min-w-[50%] h-min flex flex-col w-min";
 export const subTot = "font-bold";
 export const dltButton =
-  "h-[4] w-[4] p-1 m-[1px] rounded border-purple-600 shadow-white hover:border-[1px] hover:m-0 hover:shadow-inner";
+  "h-[4] w-[4] p-1 rounded border-purple-600 shadow-white hover:border-[1px] m-[1px] hover:m-0 hover:shadow-inner hover:scale-105";
 
 export const totalBar =
   "text-purple-600 flex w-[100%] pt-3 px-8 h-9 border-t-purple-600 border-t items-center justify-between";
 
-export const total = "text-base font-bold";
+export const total = "text-base font-bold whitespace-nowrap";
+
+export const totalPagar = "w-min flex space-x-4 items-center";
+
+export const pagarBtn =
+  "bg-[#8a4af3] hover:bg-purple-900  text-white font-bold sm:text-sm py-1.5 px-3 rounded-md duration-200 hover:shadow-inner hover:shadow-neutral-800";
 
 export const clearCart = "flex whitespace-nowrap";
 
 export const clearCartBtn =
-  "hover:shadow-md hover:shadow-purple-900 duration-100 hover:h-9 hover:w-9 h-8 w-8 border-[1px] rounded bg-neutral-900 border-purple-600 p-[1px] ml-0.5 hover:ml-0 flex items-center justify-center ahover:text-purple-300 ahover:border-purple-300 ahover:bg-neutral-600";
+  "hover:shadow-md hover:shadow-purple-900 duration-100 hover:scale-110 h-8 w-8 border-[1px] rounded bg-neutral-900 border-purple-600 hover:ml-0 flex items-center justify-center ahover:text-purple-300 ahover:border-purple-300 ahover:bg-neutral-600";
