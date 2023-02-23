@@ -50,7 +50,7 @@ class Carousel extends Component {
         <div className="max-w-[90w] max-h-[500px] items-center justify-center flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute left-0 text-3xl text-white cursor-pointer inset-y-1/2"
+            className="absolute text-3xl text-purple-700 duration-100 opacity-50 cursor-pointer hover:scale-150 hover:opacity-100 left-5 inset-y-1/2"
           />
 
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
@@ -96,7 +96,7 @@ class Carousel extends Component {
 
           <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute right-0 text-3xl text-white cursor-pointer inset-y-1/2"
+            className="absolute text-3xl text-purple-700 duration-100 opacity-50 cursor-pointer hover:scale-150 hover:opacity-100 hover:drop-shadow-2xl right-5 inset-y-1/2"
           />
         </div>
       </div>
