@@ -10,7 +10,7 @@ function App() {
     <div>
       <CartProvider>
         <Header />
-        <div className="mt-170px">
+        <div className="mt-[134px]">
           <Slider />
           <Productos />
           <ComboSec />
