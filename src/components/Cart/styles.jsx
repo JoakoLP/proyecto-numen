@@ -5,7 +5,7 @@ export const cartTitle = "text-purple-600 text-base";
 export const cart =
   "overflow-y-auto min-h-min max-h-[75vh] min-w-full max-w-full flex flex-col justify-between";
 export const itemCont =
-  "text-white py-5 p-2.5 flex-col md:flex-row border-purple-600 border-t-[1px] flex rounded-lga flex-row items-center justify-between min-h-[15vh] max-w-full";
+  "text-white py-5 p-2.5 flex-col md:flex-row border-purple-600 border-t-[1px] flex rounded-lga flex-row items-center justify-between min-h-[200px] md:min-h-[15vh] max-w-full";
 export const imgTitle = "flex min-w-[10%] justify-start items-start h-min";
 export const itemImg =
   "shadow-md shadow-purple-900 w-16 h-min roundeds border-[1.5px] border-purple-600";
