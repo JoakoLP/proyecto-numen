@@ -5,13 +5,15 @@ export const cartTitle = "text-purple-600 text-base";
 export const cart =
   "overflow-y-auto min-h-min max-h-[75vh] min-w-full max-w-full flex flex-col justify-between";
 export const itemCont =
-  "text-white py-5 p-2.5 border-purple-600 border-t-[1px] flex rounded-lga flex-row items-center justify-between min-h-[15vh] min-w-min max-w-full";
+  "text-white py-5 p-2.5 flex-col md:flex-row border-purple-600 border-t-[1px] flex rounded-lga flex-row items-center justify-between min-h-[15vh] max-w-full";
 export const imgTitle = "flex min-w-[10%] justify-start items-start h-min";
 export const itemImg =
   "shadow-md shadow-purple-900 w-16 h-min roundeds border-[1.5px] border-purple-600";
-export const itemTitle = "pl-3 h-full text-base flex flex-col justify-between";
+export const itemTitleCont =
+  "pl-3 h-full text-base flex flex-col justify-between";
 export const price = "flex w-min h-min text-xs pl-1 mt-5px whitespace-nowrap";
-export const priceQuant = "flex min-w-[35%] items-center justify-between ";
+export const priceQuant =
+  "flex min-w-min items-center justify-between ml-2 mt-3 md:mt-0";
 export const qttySect = "flex min-w-[10%] p-1 justify-between";
 export const qttySub =
   "rounded-l p-1 px-1.5 bg-purple-900 hover:shadow-inner z-10 hover:shadow-neutral-800";
