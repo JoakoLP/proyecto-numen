@@ -37,23 +37,23 @@ function Combo() {
   };
 
   return (
-    <div className="max-w-[400px] h-full w-full m-0 py-16 px-4 relative group">
+    <div className="max-w-[400px] flex items-center justify-center h-full w-full m-0 my-16 px-4 relative group">
       <div
         style={{ backgroundImage: `url(${imgCombo[currentIndex].url})` }}
-        className="w-full duration-700 bg-center bg-no-repeat bg-contain h-[350px] rounded-2xl"
+        className="w-full duration-300 bg-center bg-no-repeat bg-contain h-[350px] rounded-md bg-white"
       ></div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl p-2 bg-transparent text-black cursor-pointer">
-        <BsChevronCompactLeft onClick={prevImg} size={20} />
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl p-2 bg-transparent text-white hover:text-fuchsia-icon cursor-pointer">
+        <BsChevronCompactLeft onClick={prevImg} size={25} />
       </div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xlp-2 bg-transparent text-black cursor-pointer">
-        <BsChevronCompactRight onClick={nextImg} size={20} />
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xlp-2 bg-transparent text-white hover:text-fuchsia-icon cursor-pointer">
+        <BsChevronCompactRight onClick={nextImg} size={25} />
       </div>
-      <div className="flex justify-center py-2">
+      <div className="absolute bottom-0 flex hover:rounded-2xl text-[rgb(196,36,255,0)] hover:text-[rgb(196,36,255,0.1)] justify-center p-0.5 my-2">
         {imgCombo.map((i, imgIndex) => (
           <div
             key={imgIndex}
             onClick={() => goToImg(imgIndex)}
-            className="text-2xl cursor-pointer hover:text-fuchsia-icon"
+            className="w-full h-auto text-2xl cursor-pointer m-[1px] rounded-2xl hover:text-fuchsia-icon"
           >
             <RxDotFilled />
           </div>

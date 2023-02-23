@@ -1,5 +1,5 @@
 export const panelCont =
-  "w-full h-10 flex justify-between items-center bg-neutral-800";
+  "w-full h-min flex justify-between items-center bg-dark-gray";
 
 export const panel =
   "w-95% box-border flex justify-between m-auto items-center";

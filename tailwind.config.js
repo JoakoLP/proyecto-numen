@@ -61,8 +61,11 @@ module.exports = {
         "250px": "250px",
       },
       colors: {
-        "dark-gray": "rgb(30,30,30)",
-        "darker-gray": "rgb(20,20,20)",
+        "gray": "rgb(32,35,36)",
+        // "dark-gray": "rgb(30,30,30)",
+        "dark-gray": "rgb(24,26,27)",
+        // "darker-gray": "rgb(20,20,20)",
+        "darker-gray": "rgb(14,15,15)",
         "fuchsia-icon": "rgb(196,36,255)",
         "blue-icon": "rgb(28,108,255)",
       },
