@@ -2,7 +2,7 @@ import React from "react";
 
 function DescriptionCombo() {
   return (
-    <div className="m-10 h-96 w-[350px] self-center flex items-center justify-center flex-col text-white">
+    <div className="m-10 h-96 whitespace-normal sm:w-[640px] md:w-[768px] self-center flex items-center justify-center flex-col text-white sm:whitespace-nowrap">
       <h2 className="my-5 text-3xl font-bold text-center">
         Combo AGILIZÁ TU PC
       </h2>

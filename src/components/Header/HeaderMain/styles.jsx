@@ -9,7 +9,8 @@ export const icon = "w-60px h-60px";
 
 export const formContainer = "flex w-full h-4/5 justify-between items-center";
 
-export const search = "flex w-full h-min relative items-center justify-center";
+export const search =
+  "hidden md:flex w-full h-min relative items-center justify-center";
 export const searchForm =
   "w-65% m-auto flex justify-between border border-white rounded-lg py-5px px-7px bg-darker-gray items-center";
 export const searchTxt =
