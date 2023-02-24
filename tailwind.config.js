@@ -33,7 +33,7 @@ module.exports = {
         "60px": "60px",
         "140px": "140px",
         "170px": "170px",
-        // '220px': '220px',
+        "700px": "700px",
         "0.7em": "0.7em",
         "3%": "3%",
         "10%": "10%",
@@ -56,6 +56,18 @@ module.exports = {
       },
       minWidth: {
         "215px": "215px",
+      },
+      minHeight: {
+        "250px": "250px",
+      },
+      colors: {
+        "gray": "rgb(32,35,36)",
+        // "dark-gray": "rgb(30,30,30)",
+        "dark-gray": "rgb(24,26,27)",
+        // "darker-gray": "rgb(20,20,20)",
+        "darker-gray": "rgb(14,15,15)",
+        "fuchsia-icon": "rgb(196,36,255)",
+        "blue-icon": "rgb(28,108,255)",
       },
     },
   },

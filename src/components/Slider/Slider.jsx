@@ -21,7 +21,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 3000);
+    }, 9000);
   }
 
   nextSlide = () => {
@@ -35,7 +35,7 @@ class Carousel extends Component {
   prevSlide = () => {
     let newSlide =
       this.state.currentSlide === 0
-        ?SliderData.length - 1
+        ? SliderData.length - 1
         : this.state.currentSlide - 1;
     this.setState({ currentSlide: newSlide });
   };
@@ -46,11 +46,11 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="flex justify-center mt-3 py-10">
-        <div className="w-[1280px] h-[500px] flex overflow-hidden relative">
+      <div className="flex justify-center pb-10">
+        <div className="max-w-[90w] max-h-[500px] items-center justify-center flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+            className="absolute left-0 text-3xl text-white cursor-pointer inset-y-1/2"
           />
 
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
@@ -62,7 +62,7 @@ class Carousel extends Component {
                   key={index}
                   className={
                     index === this.state.currentSlide
-                      ? "block w-[1280px] h-[500px] object-fill  rounded-2xl"
+                      ? "block w-[full] h-[auto] object-fill  rounded-2xl"
                       : "hidden"
                   }
                   onMouseEnter={() => {
@@ -76,13 +76,13 @@ class Carousel extends Component {
             })}
           </Swipe>
 
-          <div className="absolute w-full flex justify-center bottom-0">
+          <div className="absolute bottom-0 flex justify-center w-full">
             {SliderData.map((element, index) => {
               return (
                 <div
                   className={
                     index === this.state.currentSlide
-                      ? "h-2 w-2 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer"
+                      ? "h-2 w-2 bg-purple-700 rounded-full mx-2 mb-2 cursor-pointer"
                       : "h-2 w-2 bg-white rounded-full mx-2 mb-2 cursor-pointer"
                   }
                   key={index}
@@ -96,7 +96,7 @@ class Carousel extends Component {
 
           <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+            className="absolute right-0 text-3xl text-white cursor-pointer inset-y-1/2"
           />
         </div>
       </div>
