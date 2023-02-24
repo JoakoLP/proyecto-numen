@@ -18,9 +18,9 @@ export const priceQuant =
   "flex min-w-min items-center justify-between md:ml-2 mt-3 md:mt-0";
 export const qttySect = "flex min-w-[10%] p-1 justify-between";
 export const qttySub =
-  "rounded-l p-1 px-1.5 bg-purple-900 hover:shadow-inner z-10 hover:shadow-neutral-800";
+  "rounded-l p-1 px-1.5 bg-purple-900 active:duration-100 active:scale-110 hover:shadow-inner z-10 hover:shadow-neutral-800";
 export const qttyAdd =
-  "rounded-r p-1 px-1.5 bg-purple-900 hover:shadow-inner z-10 hover:shadow-neutral-800";
+  "rounded-r p-1 px-1.5 bg-purple-900 active:duration-100 active:scale-110 hover:shadow-inner z-10 hover:shadow-neutral-800";
 export const quantity =
   "flex whitespace-nowrap items-center bg-purple-800 z-0 p-1 px-1.5";
 export const priceSub =
@@ -42,4 +42,4 @@ export const pagarBtn =
 export const clearCart = "flex whitespace-nowrap";
 
 export const clearCartBtn =
-  "hover:shadow-md hover:shadow-purple-900 duration-100 hover:scale-110 h-8 w-8 border-[1px] rounded bg-neutral-900 border-purple-600 hover:ml-0 flex items-center justify-center ahover:text-purple-300 ahover:border-purple-300 ahover:bg-neutral-600";
+  "active:duration-100 active:scale-110 hover:shadow-md hover:shadow-purple-900 duration-100 h-8 w-8 border-[1px] rounded bg-neutral-900 border-purple-600 hover:ml-0 flex items-center justify-center ahover:text-purple-300 ahover:border-purple-300 ahover:bg-neutral-600";
