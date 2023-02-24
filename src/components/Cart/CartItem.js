@@ -20,7 +20,7 @@ const CartItem = ({ data, addToCart, deleteFromCart, deleteAllItems }) => {
       <div className={styles.imgTitle} title={data.name}>
         <img className={styles.itemImg} src={data.img} />
         <div className={styles.itemTitleCont}>
-          <span>{data.name}</span>
+          <span className={styles.itemTitle}>{data.name}</span>
           <span className={styles.price}>Unidad: ${data.price}</span>
         </div>
       </div>
