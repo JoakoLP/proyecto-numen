@@ -30,9 +30,9 @@ export const dltButton =
   "h-[4] w-[4] p-1 rounded border-purple-600 shadow-white hover:border-[1px] m-[1px] hover:m-0 hover:shadow-inner hover:scale-105";
 
 export const totalBar =
-  "text-purple-600 flex w-[100%] pt-3 px-8 h-9 border-t-purple-600 border-t items-center justify-between";
+  "text-purple-600 flex w-[100%] pt-3 sm:px-8 h-9 border-t-purple-600 border-t items-center justify-between";
 
-export const total = "text-base font-bold whitespace-nowrap";
+export const total = "text-sm sm:text-base font-bold whitespace-nowrap";
 
 export const totalPagar = "w-min flex space-x-4 items-center";
 
