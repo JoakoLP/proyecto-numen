@@ -10,9 +10,9 @@ const Product = (props) => {
   return (
     <div
       key={data.id}
-      className="flex flex-col h-[300px] sm:h-[500px] justify-between p-2 duration-300 border border-purple-700 rounded-lg shadow-lg hover:shadow-[rgb(196,36,255,0.25)] hover:scale-105"
+      className="flex sm:flex-col h-min sm:h-[500px] justify-between p-2 duration-300 border border-purple-700 rounded-lg shadow-lg hover:shadow-[rgb(196,36,255,0.25)] hover:scale-105"
     >
-      <div className="w-auto h-[130px] sm:h-[250px] p-2 flex items-center justify-center mx-1 mt-1 bg-white rounded-md">
+      <div className="w-[130px] shrink-0 sm:w-auto h-[130px] sm:h-[250px] p-2 flex items-center justify-center sm:mx-1 bg-white rounded-md">
         <img
           src={data.img}
           alt={data.name}
@@ -20,12 +20,12 @@ const Product = (props) => {
         />
       </div>
 
-      <div className="flex flex-col h-[45%] justify-between px-2 my-2 sm:my-4 text-center">
-        <p className="md:font-bold text-sm md:text-base h-[45%] text-ellipsis text-white overflow-hidden hover:overflow-visible">
+      <div className="flex flex-col min-h-max sm:w-full sm:h-[45%] justify-between px-2 my-2 sm:my-4 text-center">
+        <p className="md:font-bold text-sm md:text-base text-left sm:text-center h-[50%] sm:h-[45%] text-ellipsis text-white overflow-hidden hover:overflow-visible">
           {data.name}
         </p>
-        <div className="flex flex-col">
-          <span className="py-1 font-bold text-white rounded-full ">
+        <div className="flex flex-col self-end sm:w-full sm:self-auto w-min">
+          <span className="py-1 font-bold text-center text-white rounded-full ">
             ${data.price}
           </span>
           <button
