@@ -5,16 +5,24 @@ const Comentary = () => {
   const [search, setSearch] = useState([]);
 
   return (
-    <div className="w-full px-10 py-10">
+    <div className="flex max-w-50 flex flex-row-reverse rounded-lg">
+      <button>
+        <p>
+          <code className="text-white text-2xl">&lt;</code>
+        </p>
+      </button>
+
       <form
-        className="w-screen"
+        className=" bg-[#8a4af3] rounded-lg "
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
         }}
       >
-        <input
-          className=" w-screen"
+        <textarea
+          rows="60"
+          cols="40"
+          className="h-12 mb-1 px-2 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm"
           type="text"
           name="search"
           required
@@ -22,19 +30,22 @@ const Comentary = () => {
           autoFocus
           size="42"
           autoComplete="off"
-        ></input>
-        <button type="submit" className="border-black shadow-black">
+        ></textarea>
+        <button
+          type="submit"
+          className="text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4  duration-300 hover:shadow-inner hover:shadow-neutral-800"
+        >
           Comentar
         </button>
-        <div className="">
-          <ul className="flex flex-col space-y-4 ">
+        <div className="overflow-y-auto overflow-x-hidden max-h-80">
+          <ul className="flex flex-col space-y-1 ">
             {search
               .slice(0)
               .reverse()
               .map((coment, index) => (
                 <li
                   key={index}
-                  className="  h-8  rounded-lg border-2 text-justify border-black shadow-black shadow-sm"
+                  className="h-16 w-full px-2 flex items-center capitalize md:w-auto rounded-lg border-2 text-justify bg-white border-black shadow-black shadow-sm"
                 >
                   {coment}
                 </li>
