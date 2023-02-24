@@ -20,8 +20,8 @@ const Product = (props) => {
         />
       </div>
 
-      <div className="flex flex-col min-h-max sm:w-full sm:h-[45%] justify-between px-2 my-2 sm:my-4 text-center">
-        <p className="md:font-bold text-sm md:text-base text-left sm:text-center h-[50%] sm:h-[45%] text-ellipsis text-white overflow-hidden hover:overflow-visible">
+      <div className="flex flex-col min-h-max w-full sm:h-[45%] justify-between px-2 my-2 sm:my-4 text-center">
+        <p className="text-xs sm:text-sm md:text-base text-left sm:text-center h-[64px] sm:h-[80px] md:h-[96px] text-ellipsis text-white overflow-hidden hover:overflow-visible">
           {data.name}
         </p>
         <div className="flex flex-col self-end sm:w-full sm:self-auto w-min">
