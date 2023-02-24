@@ -21,7 +21,7 @@ const Product = (props) => {
       </div>
 
       <div className="flex flex-col h-[45%] justify-between px-2 my-2 sm:my-4 text-center">
-        <p className="font-bold text-sm md:text-base h-[45%] text-ellipsis text-white overflow-hidden hover:overflow-visible">
+        <p className="md:font-bold text-sm md:text-base h-[45%] text-ellipsis text-white overflow-hidden hover:overflow-visible">
           {data.name}
         </p>
         <div className="flex flex-col">
