@@ -37,7 +37,7 @@ const ModalContainer = ({ children, status, setStatus }) => {
               className={styles.closeBtn}
               onClick={() => setStatus(!status)}
             >
-              <span className="flex flex-wrap content-center px-[1px]">
+              <span className="flex flex-wrap content-center pl-[5px]">
                 Esc
               </span>
               <span className={styles.closeBtnX}>{x}</span>

@@ -10,31 +10,33 @@ const Product = (props) => {
   return (
     <div
       key={data.id}
-      className="flex flex-col justify-between p-2 duration-300 border border-purple-700 rounded-lg shadow-lg hover:shadow-[rgb(196,36,255,0.1)] hover:scale-105"
+      className="flex sm:flex-col h-min sm:h-[500px] justify-between p-2 duration-300 border border-purple-700 rounded-lg shadow-lg hover:shadow-[rgb(196,36,255,0.25)] hover:scale-105"
     >
-      <div className="mx-3 mt-3 bg-white rounded-md">
+      <div className="w-[130px] shrink-0 sm:w-auto h-[130px] sm:h-[250px] p-2 flex items-center justify-center sm:mx-1 bg-white rounded-md">
         <img
           src={data.img}
           alt={data.name}
-          className="w-full h-[200px] object-contain rounded-t-lg truncate "
+          className="object-contain w-full h-full truncate rounded-t-lg "
         />
       </div>
 
-      <div className="flex flex-col h-[45%] justify-end px-2 py-4 space-y-4 text-center">
-        <p className="font-bold h-[35%] text-ellipsis text-white overflow-hidden hover:overflow-visible">
+      <div className="flex flex-col min-h-max w-full sm:h-[45%] justify-between px-2 my-2 sm:my-4 text-center">
+        <p className="text-xs sm:text-sm md:text-base text-left sm:text-center h-[64px] sm:h-[80px] md:h-[96px] text-ellipsis text-white overflow-hidden hover:overflow-visible">
           {data.name}
         </p>
-        <span className="pt-2 font-bold text-white rounded-full ">
-          ${data.price}
-        </span>
-        <button
-          onClick={() => {
-            actions.addToCart(data.id);
-          }}
-          className="bg-[#8a4af3] self-center hover:bg-purple-900  text-white font-bold sm:text-xs py-2 px-4 rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 w-min whitespace-nowrap"
-        >
-          Agregar al Carrito
-        </button>
+        <div className="flex flex-col self-end sm:w-full sm:self-auto w-min">
+          <span className="py-1 font-bold text-center text-white rounded-full ">
+            ${data.price}
+          </span>
+          <button
+            onClick={() => {
+              actions.addToCart(data.id);
+            }}
+            className="bg-[#8a4af3] self-center  text-white font-bold text-sm py-1 sm:py-2 px-2 sm:px-4 rounded-full duration-300 active:scale-125 active:duration-100 hover:bg-purple-900 hover:shadow-inner hover:shadow-neutral-800 w-min whitespace-nowrap"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
       </div>
     </div>
   );

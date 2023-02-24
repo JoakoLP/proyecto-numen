@@ -5,20 +5,18 @@ import Column3 from "./column3";
 
 function Foot() {
   return (
-    <div className="flex p-5 justify-evenly columns-4">
-      <div className="text-5xl font-bold text-fuchsia-icon">LOGO</div>
+    <div className="flex flex-col flex-wrap p-5 sm:flex-row lg:flex-nowrap sm:justify-center justify-evenly columns-4">
       {/* column1 */}
-      <div>
+      <div className="flex flex-col w-full md:items-center md:flex-row justify-evenly">
+        <div className="mb-5 text-5xl font-bold text-fuchsia-icon">LOGO</div>
         <Column1 />
       </div>
       {/* column2 */}
-      <div>
+      <div className="flex flex-col w-full md:flex-row justify-evenly">
         <Column2 />
-      </div>
-      {/* column3 */}
-      <div>
         <Column3 />
       </div>
+      {/* column3 */}
     </div>
   );
 }

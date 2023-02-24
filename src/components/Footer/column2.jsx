@@ -20,7 +20,7 @@ function Column2() {
       </div>
       <div className="pb-7">
         <h3 className={TitleFoot}>FORMAS DE PAGO</h3>
-        <div className="flex justify-between p-5 columns-4">
+        <div className="flex justify-between p-5 min-w-[16rem] max-w-[21rem] md:max-w-none flex-wrap columns-4">
           <img className="h-16 m-1" src={Visa} alt="" />
           <img className="h-16 m-1" src={MasterCard} alt="" />
           <img className="h-16 m-1" src={AmercanExpress} alt="" />

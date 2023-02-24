@@ -19,58 +19,53 @@ const Productos = () => {
     );
   };
 
+  const styleBtn =
+    "m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 active:scale-75 active:duration-100 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2";
+
   return (
     <div className="max-w-[1640px] m-auto px-4 py-4">
-      <h1 className="pb-2 m-auto text-4xl font-bold text-center border-b-2 border-purple-700 w-min text-neutral-200">
+      <h1 className="m-auto text-4xl font-bold text-center border-b-2 border-purple-700 w-min text-neutral-200">
         Componentes
       </h1>
 
       {/* Filter Row */}
-      <div className="flex flex-col justify-between lg:flex-row">
+      <div className="flex flex-col justify-between pt-4 lg:flex-row">
         {/* Fliter Type */}
         <div>
           <p className="font-bold text-white">Filtro por Categoria</p>
-          <div className="flex flex-wrap pt-2 justfiy-between">
-            <button
-              onClick={() => setProducts(data)}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2"
-            >
-              All
+
+          <div className="flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap">
+            <button onClick={() => setProducts(data)} className={styleBtn}>
+              Todo
             </button>
-            <button
-              onClick={() => filterType("CPU")}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2 "
-            >
+            <button onClick={() => filterType("CPU")} className={styleBtn}>
               Microprocesador
             </button>
-            <button
-              onClick={() => filterType("RAM")}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2 "
-            >
+            <button onClick={() => filterType("RAM")} className={styleBtn}>
               RAM
+            </button>
+            <button onClick={() => filterType("SSD")} className={styleBtn}>
+              Disco Sólido
+            </button>
+            <button onClick={() => filterType("HDD")} className={styleBtn}>
+              Disco Duro
             </button>
             <button
               onClick={() => filterType("Motherboards")}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2 "
+              className={styleBtn}
             >
               Motherboard
             </button>
-            <button
-              onClick={() => filterType("GPU")}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2 "
-            >
+            <button onClick={() => filterType("GPU")} className={styleBtn}>
               Grafica
             </button>
             <button
               onClick={() => filterType("Notebooks")}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2 "
+              className={styleBtn}
             >
-              Notebooks
+              Notebook
             </button>
-            <button
-              onClick={() => filterType("Desktop")}
-              className="m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2 "
-            >
+            <button onClick={() => filterType("Desktop")} className={styleBtn}>
               PC de Escritorio
             </button>
           </div>
@@ -78,7 +73,7 @@ const Productos = () => {
       </div>
 
       {/* display productos */}
-      <div className="grid grid-cols-2 gap-6 pt-4 lg:grid-cols-4">
+      <div className="grid gap-6 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {products.map((product) => (
           <Product key={product.id} data={product} />
         ))}
