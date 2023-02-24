@@ -3,7 +3,7 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider/Slider";
 import Categories from "./components/Categories/Categories";
-import Comentaries from "./components/Comentary/Comentaries";
+import Comentary from "./components/Comentary/Comentary";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Cards />
       <Slider />
       <Categories />
-      <Comentaries />
+      <Comentary />
       <Footer />
     </div>
   );
