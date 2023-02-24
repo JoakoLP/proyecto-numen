@@ -7,13 +7,13 @@ import CartProvider from "./contexts/CartProvider";
 
 function App() {
   return (
-    <div className="bg-dark-gray">
+    <div className="select-none bg-dark-gray">
       <CartProvider>
         <Header />
-        <div className="mt-[134px]">
+        <div className="mt-[104px] md:mt-[134px]">
           <Slider />
-          <Productos />
           <ComboSec />
+          <Productos />
           <Footer />
         </div>
       </CartProvider>
