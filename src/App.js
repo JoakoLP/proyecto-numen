@@ -1,15 +1,16 @@
 import Header from "./components/Header";
 import Cards from "./components/Cards";
-import navbar from "./components/navbar";
-import carousel from "./components/carousel";
+import CarouselProducts from "./components/CarouselPruducts.jsx/CArouselProducts";
+
+
 
 function App() {
   return (
     <div>
       <Header />
       <Cards />
-      <navbar/>
-      <carousel/>
+      <CarouselProducts/>
+      
 
     </div>
   );
