@@ -28,3 +28,30 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #521687;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1120px) {
+  .categBtns::-webkit-scrollbar {
+    display: initial;
+    width: 0px;
+    height: 5px;
+  }
+  .categBtns::-webkit-scrollbar-track {
+    height: 5px;
+  }
+}
+@media screen and (max-width: 800px), (min-width: 1120px) {
+  .categBtns::-webkit-scrollbar {
+    display: none;
+    /* height: 0px;
+    width: 0px; */
+  }
+  .categBtns::-webkit-scrollbar-track {
+    /* height: 0px;
+    width: 0px; */
+  }
+}
+
+/* .categBtns {
+  white-space: nowrap;
+  overflow-y: clip;
+} */

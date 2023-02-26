@@ -1,19 +1,20 @@
 import React from "react";
 import { useState } from "react";
+import { boton, contenedor } from "./style";
 const Comentary = () => {
-  const data = [{ text: "hola" }, { text: "hi" }, { text: "holi" }];
+  // const data = [{ text: "hola" }, { text: "hi" }, { text: "holi" }];
   const [search, setSearch] = useState([]);
 
   return (
-    <div className="flex max-w-50 flex flex-row-reverse rounded-lg">
+    <div className="max-h-100 flex flex-row-reverse rounded-lg ">
       <button>
         <p>
-          <code className="text-white text-2xl">&lt;</code>
+          <code className={boton}>&lt;</code>
         </p>
       </button>
 
       <form
-        className=" bg-[#8a4af3] rounded-lg "
+        className={contenedor}
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
@@ -22,7 +23,7 @@ const Comentary = () => {
         <textarea
           rows="60"
           cols="40"
-          className="h-12 mb-1 px-2 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm"
+          className=" h-40 w-90 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm"
           type="text"
           name="search"
           required
@@ -33,19 +34,19 @@ const Comentary = () => {
         ></textarea>
         <button
           type="submit"
-          className="text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4  duration-300 hover:shadow-inner hover:shadow-neutral-800"
+          className="text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800"
         >
           Comentar
         </button>
-        <div className="overflow-y-auto overflow-x-hidden max-h-80">
-          <ul className="flex flex-col space-y-1 ">
+        <div className="max-h-80 overflow-x-auto">
+          <ul className=" flex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
               .reverse()
               .map((coment, index) => (
                 <li
                   key={index}
-                  className="h-16 w-full px-2 flex items-center capitalize md:w-auto rounded-lg border-2 text-justify bg-white border-black shadow-black shadow-sm"
+                  className=" flex break-all w-80 items-center capitalize rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
                   {coment}
                 </li>
