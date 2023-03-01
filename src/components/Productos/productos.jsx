@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import Product from "./Product";
 import { CartContext } from "../../contexts/CartProvider";
+import { motion } from "framer-motion";
 
 const Productos = () => {
   // useContext
@@ -73,11 +74,11 @@ const Productos = () => {
       </div>
 
       {/* display productos */}
-      <div className="grid gap-6 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+      <motion.div className="grid gap-6 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {products.map((product) => (
           <Product key={product.id} data={product} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

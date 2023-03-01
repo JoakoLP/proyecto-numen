@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/CartProvider";
+import { motion } from "framer-motion";
 
 const Product = (props) => {
   const { data } = props;
@@ -8,7 +9,9 @@ const Product = (props) => {
   const [state, dispatch, actions] = useContext(CartContext);
 
   return (
-    <div
+    <motion.div
+      animate={{ opacity: 4 }}
+      initial={{ opacity: 0 }}
       key={data.id}
       className="flex sm:flex-col h-min sm:h-[500px] justify-between p-2 duration-300 border border-purple-700 rounded-lg shadow-lg hover:shadow-[rgb(196,36,255,0.25)] hover:scale-105"
     >
@@ -38,7 +41,7 @@ const Product = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
