@@ -9,7 +9,7 @@ const Comentary = () => {
   return (
     <div className="fixed z-9999999999999999 inset-x-1  flex flex-row-reverse rounded-lg ">
       <button
-        className={"p-2 bg-red-500 bg-purple-600"}
+        className={"p-1 bg-red-500 bg-purple-600 "}
         onClick={() => setOpen(false)}
       >
         <p className="max-h-10">
@@ -27,7 +27,9 @@ const Comentary = () => {
       >
         <div className="flex justify-between w-80">
           <button
-            className={"bg-red-400 p-4 z-90 bg-purple-600 text-white"}
+            className={
+              "bg-red-400 p-2 z-90 bg-purple-600 text-white rounded-lg"
+            }
             onClick={() => setOpen(true)}
           >
             x
@@ -51,11 +53,11 @@ const Comentary = () => {
           type="submit"
           className={`${
             !open ? "w-50" : "w-0 hidden"
-          } text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800`}
+          } m-1 text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800`}
         >
           Comentar
         </button>
-        <div className="max-h-80 overflow-x-auto">
+        <div className="max-h-80 overflow-x-auto rounded-xl">
           <ul className=" flex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
@@ -63,7 +65,7 @@ const Comentary = () => {
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" p-5 max-w-80 flex break-all w-80 items-center capitalize rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className=" p-5 rounded-full max-w-80 flex break-all w-80 items-center capitalize rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
                   {coment}
                 </li>
