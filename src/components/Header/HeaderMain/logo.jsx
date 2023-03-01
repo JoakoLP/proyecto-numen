@@ -1,15 +1,17 @@
 // para usar en caso de tener icono + texto
 // sin usar por ahora, faltan modificaciones
 import React from "react";
+import imgIcon from "../../../img/icons8-circuit-96.png";
 import * as styles from "./styles";
 
 const Logo = () => {
   return (
-    <div>
-      <div className={styles.titleTxt}>
-        <span>Maximus</span>
-        <span className={styles.subtitleTxt}>Gaming Hardware</span>
-      </div>
+    <div className={styles.iconTitleCont}>
+      <img src={imgIcon} alt="" className={styles.icon} />
+      <span className={styles.title}>
+        <span className={styles.titleTxt}>GAMING STORE</span>
+        <span className={styles.subtitleTxt}>Low High Bucket</span>
+      </span>
     </div>
   );
 };
