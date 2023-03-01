@@ -1,29 +1,44 @@
 import React from "react";
 import { useState } from "react";
-import { boton, contenedor } from "./style";
+
 const Comentary = () => {
   // const data = [{ text: "hola" }, { text: "hi" }, { text: "holi" }];
   const [search, setSearch] = useState([]);
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="max-h-100 flex flex-row-reverse rounded-lg ">
-      <button>
-        <p>
-          <code className={boton}>&lt;</code>
+    <div className="fixed z-9999999999999999 inset-x-1  flex flex-row-reverse rounded-lg ">
+      <button
+        className={"p-2 bg-red-500 bg-purple-600"}
+        onClick={() => setOpen(false)}
+      >
+        <p className="max-h-10">
+          <code className={"text-white text-2"}>&lt;</code>
         </p>
       </button>
-
       <form
-        className={contenedor}
+        className={`${
+          !open ? "w-80" : "w-0 hidden"
+        } h-auto  rounded-lg flex flex-col transition-all duration-300`}
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
         }}
       >
+        <div className="flex justify-between w-80">
+          <button
+            className={"bg-red-400 p-4 z-90 bg-purple-600 text-white"}
+            onClick={() => setOpen(true)}
+          >
+            x
+          </button>
+        </div>
         <textarea
           rows="60"
           cols="40"
-          className=" h-40 w-90 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm"
+          className={`${
+            !open ? "w-80" : "w-0 hidden"
+          } h-40 w-90 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm `}
           type="text"
           name="search"
           required
@@ -34,7 +49,9 @@ const Comentary = () => {
         ></textarea>
         <button
           type="submit"
-          className="text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800"
+          className={`${
+            !open ? "w-50" : "w-0 hidden"
+          } text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800`}
         >
           Comentar
         </button>
@@ -46,7 +63,7 @@ const Comentary = () => {
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" flex break-all w-80 items-center capitalize rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className=" p-5 max-w-80 flex break-all w-80 items-center capitalize rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
                   {coment}
                 </li>

@@ -13,9 +13,10 @@ function App() {
         <Header />
         <div className="mt-[104px] md:mt-[134px]">
           <Slider />
+          <Comentary />
           <ComboSec />
           <Productos />
-          <Comentary />
+
           <Footer />
         </div>
       </CartProvider>
