@@ -8,15 +8,23 @@ import * as styles from "./styles";
 const Links = () => {
   return (
     <div className={styles.linksCont}>
-      <span href="#" className={styles.link}>
+      <a
+        href="https://www.ups.com/track?loc=es_AR&requester=ST/"
+        className={styles.link}
+        target="_blank"
+      >
         <img src={shipImg} className={styles.linkImg} alt="" />
         Seguir mi Pedido UPS
-      </span>
-      <span href="#" className={styles.link}>
+      </a>
+      <a
+        href="https://www.oca.com.ar/Seguimiento/BuscarEnvio/paquetes"
+        className={styles.link}
+        target="_blank"
+      >
         <img src={shipImg} className={styles.linkImg} alt="" />
         Seguir mi Pedido OCA
-      </span>
-      <span href="#" className={styles.link}>
+      </a>
+      {/* <span href="#" className={styles.link}>
         <img src={docImg} className={styles.linkImg} alt="" />
         Subir Comprobantes
       </span>
@@ -27,7 +35,7 @@ const Links = () => {
       <span href="#" className={styles.link}>
         <img src={helpImg} className={styles.linkImg} alt="" />
         Ayuda
-      </span>
+      </span> */}
     </div>
   );
 };

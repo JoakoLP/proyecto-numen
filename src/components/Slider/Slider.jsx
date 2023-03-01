@@ -46,7 +46,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="flex justify-center pb-10 group">
+      <div className="flex justify-center pb-4 group">
         <div className="max-w-[90w] max-h-[500px] items-center justify-center flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
