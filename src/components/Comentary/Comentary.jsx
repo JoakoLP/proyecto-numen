@@ -7,13 +7,15 @@ const Comentary = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed z-9999999999999999 inset-x-1  flex flex-row-reverse rounded-lg ">
+    <div className="fixed z-9999999999999999 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
       <button
-        className={"p-1 bg-red-500 bg-purple-600 "}
+        className={
+          "p-1 z-9999999999999999 h-10 rounded-xl bg-red-500 bg-purple-600 "
+        }
         onClick={() => setOpen(false)}
       >
-        <p className="max-h-10">
-          <code className={"text-white text-2"}>&lt;</code>
+        <p className="rounded-lg">
+          <code className={" rounded-lg text-white text-2"}>&lt;</code>
         </p>
       </button>
       <form
@@ -58,7 +60,7 @@ const Comentary = () => {
           Comentar
         </button>
         <div className="max-h-80 overflow-x-auto rounded-xl">
-          <ul className=" flex flex-col flex-wrap space-y-1  ">
+          <ul className=" overflow-y-hidden flex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
               .reverse()
