@@ -14,23 +14,23 @@ const Comentary = () => {
         }
         onClick={() => setOpen(false)}
       >
-        <p className="rounded-lg">
+        <p className="rounded-lg w-6">
           <code className={" rounded-lg text-white text-2"}>&lt;</code>
         </p>
       </button>
       <form
         className={`${
-          !open ? "w-80" : "w-0 hidden"
+          !open ? "w-80" : "w-0 "
         } h-auto  rounded-lg flex flex-col transition-all duration-300`}
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
         }}
       >
-        <div className="flex justify-between w-80">
+        <div className="flex justify-between pl-1 w-80">
           <button
             className={
-              "bg-red-400 p-2 z-90 bg-purple-600 text-white rounded-lg"
+              "bg-red-400 p-1 z-90 bg-purple-600 text-white rounded-lg"
             }
             onClick={() => setOpen(true)}
           >
@@ -42,7 +42,7 @@ const Comentary = () => {
           cols="40"
           className={`${
             !open ? "w-80" : "w-0 hidden"
-          } h-40 w-90 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm `}
+          } w-90 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm `}
           type="text"
           name="search"
           required
@@ -59,15 +59,15 @@ const Comentary = () => {
         >
           Comentar
         </button>
-        <div className="max-h-80 overflow-x-auto rounded-xl">
-          <ul className=" overflow-y-hidden flex flex-col flex-wrap space-y-1  ">
+        <div className="h-96 overflow-x-hidden rounded-xl">
+          <ul className=" overflow-y-hidden gitflex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
               .reverse()
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" p-5 rounded-full max-w-80 flex break-all w-80 items-center capitalize rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className=" p-4 rounded-full max-w-80 flex break-all w-80 items-center rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
                   {coment}
                 </li>
