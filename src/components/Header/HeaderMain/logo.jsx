@@ -10,7 +10,7 @@ const Logo = () => {
       <img src={imgIcon} alt="" className={styles.icon} />
       <span className={styles.title}>
         <span className={styles.titleTxt}>GAMING STORE</span>
-        <span className={styles.subtitleTxt}>Low High Bucket</span>
+        <span className={styles.subtitleTxt}>Low High Budget</span>
       </span>
     </div>
   );

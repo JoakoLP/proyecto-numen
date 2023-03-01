@@ -17,7 +17,7 @@ function Foot() {
               GAMING STORE
             </span>
             <span className="flex text-lg leading-none whitespace-nowrap">
-              Low High Bucket
+              Low High Budget
             </span>
           </span>
         </div>
