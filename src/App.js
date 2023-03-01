@@ -4,6 +4,7 @@ import Slider from "./components/Slider/Slider";
 import ComboSec from "./components/Combo";
 import Productos from "./components/Productos/productos";
 import CartProvider from "./contexts/CartProvider";
+import About from "./components/Banner/about";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <CartProvider>
         <Header />
         <div className="mt-[104px] md:mt-[134px]">
+          <About />
           <Slider />
           <ComboSec />
           <Productos />
