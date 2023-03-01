@@ -20,7 +20,7 @@ const Productos = () => {
   };
 
   const styleBtn =
-    "m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 active:scale-75 active:duration-100 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2";
+    "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
 
   return (
     <div className="max-w-[1640px] m-auto px-4 py-4">
