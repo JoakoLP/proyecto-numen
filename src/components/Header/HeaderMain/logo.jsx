@@ -8,11 +8,11 @@ const Logo = () => {
     <div className={styles.iconTitleCont}>
       <Link className={styles.icon} to={"/"}>
         <img src={imgIcon} alt="" className={styles.icon} />
+        <span className={styles.title}>
+          <span className={styles.titleTxt}>GAMING STORE</span>
+          <span className={styles.subtitleTxt}>Low High Budget</span>
+        </span>
       </Link>
-      <span className={styles.title}>
-        <span className={styles.titleTxt}>GAMING STORE</span>
-        <span className={styles.subtitleTxt}>Low High Budget</span>
-      </span>
     </div>
   );
 };
