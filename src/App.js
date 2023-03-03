@@ -26,10 +26,8 @@ function App() {
                   </>
                 }
               />
+
               <Route path="/about-us" element={<About />} />
-              {/* <Slider />
-              <ComboSec />
-              <Productos /> */}
             </Routes>
           </div>
           <Footer />
