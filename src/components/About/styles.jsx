@@ -1,8 +1,8 @@
 export const tablesCont =
-  "grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-1";
+  "grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-1 select-text";
 
 export const imgCont = "py-4";
-export const img = "max-w-[150px] min-h-[150px] m-auto";
+export const img = "max-w-[150px] min-h-[150px] m-auto select-none";
 export const table =
   "bg-black m-3 duration-300 max-w-min border border-fuchsia-icon border-spacing-2 ";
 export const tableTitle = "bg-black text-fuchsia-icon border py-1";
@@ -16,4 +16,4 @@ export const svg =
 export const redCont = "flex flex-row no-wrap justify-evenly";
 
 export const github =
-  "flex flex-nowrap justify-center text-purple-700 hover:text-white text-2xl pb-2";
+  "flex flex-nowrap justify-center text-purple-700 text-2xl py-2";

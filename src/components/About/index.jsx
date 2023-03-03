@@ -75,7 +75,7 @@ const About = () => {
       </div>
       <div className={styles.github}>
         <a href="https://github.com/JoakoLP/proyecto-numen" target="_blank">
-          <span className="whitespace-nowrap">
+          <span className="whitespace-nowrap hover:text-white">
             Repositorio de Github <Github />
           </span>
         </a>
