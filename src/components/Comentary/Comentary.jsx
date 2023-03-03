@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { useLocalStorage } from "./useLocalStorage";
 
 const Comentary = () => {
-  // const data = [{ text: "hola" }, { text: "hi" }, { text: "holi" }];
-  const [search, setSearch] = useState([]);
+  const data = [{ text: "hola" }, { text: "hi" }, { text: "holi" }];
+  const data2 = [];
+  const [search, setSearch] = useLocalStorage("search", []);
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,7 +23,7 @@ const Comentary = () => {
       <form
         className={`${
           !open ? "w-80" : "w-0 "
-        } h-auto  rounded-lg flex flex-col transition-all duration-300`}
+        } h-auto  rounded-lg flex flex-col`}
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
@@ -42,7 +44,7 @@ const Comentary = () => {
           cols="40"
           className={`${
             !open ? "w-80" : "w-0 hidden"
-          } w-90 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm `}
+          } w-90 max-h-20 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm `}
           type="text"
           name="search"
           required
@@ -67,7 +69,7 @@ const Comentary = () => {
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" p-4 rounded-full max-w-80 flex break-all w-80 items-center rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className=" p-4 rounded-lg max-w-80 flex break-all w-80 items-center rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
                   {coment}
                 </li>
