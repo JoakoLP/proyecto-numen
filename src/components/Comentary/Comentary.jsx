@@ -9,11 +9,9 @@ const Comentary = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed z-9999999999999999 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
+    <div className="fixed z-50 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
       <button
-        className={
-          "p-1 z-9999999999999999 h-10 rounded-xl bg-red-500 bg-purple-600 "
-        }
+        className={"h-10 rounded-xl bg-red-500 bg-purple-600 "}
         onClick={() => setOpen(false)}
       >
         <p className="rounded-lg w-6">
