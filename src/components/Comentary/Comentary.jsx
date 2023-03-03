@@ -21,7 +21,7 @@ const Comentary = () => {
       <form
         className={`${
           !open ? "w-80" : "w-0 "
-        } h-auto  rounded-lg flex flex-col`}
+        } h-auto  rounded-lg flex flex-col transition-all duration-500`}
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
@@ -59,7 +59,7 @@ const Comentary = () => {
         >
           Comentar
         </button>
-        <div className="h-96 overflow-x-hidden rounded-xl">
+        <div className="h-1/5 overflow-x-hidden rounded-xl">
           <ul className=" overflow-y-hidden gitflex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
