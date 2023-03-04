@@ -41,7 +41,7 @@ const Comentary = () => {
           cols="40"
           className={`${
             !open ? "w-80" : "w-0 hidden"
-          } w-90 max-h-20 mb-1 px-2 hover:bg-purple-200 rounded-lg capitalize border-2 bg-white border-black shadow-black shadow-sm `}
+          } w-90 max-h-20 mb-1 px-2 hover:bg-purple-200 rounded-lg border-2 bg-slate-100 border-black shadow-black shadow-sm `}
           type="text"
           name="search"
           required
@@ -66,9 +66,11 @@ const Comentary = () => {
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" p-3 rounded-lg text-xs flex break-all w-80 items-center rounded-lg border-2 border-purple-300 bg-slate-300 hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className=" p-3 rounded-lg text-xs flex break-all w-80 items-center rounded-lg border-2 border-purple-300 bg-slate-100 hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
-                  {coment.charAt(0).toUpperCase() + coment.slice(1)}
+                  <p className="bg-slate-200 rounded-lg w-full py-2 pl-1 pr-3 w-72 ">
+                    {coment.charAt(0).toUpperCase() + coment.slice(1)}
+                  </p>
                 </li>
               ))}
           </ul>
