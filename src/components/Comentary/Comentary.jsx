@@ -18,7 +18,7 @@ const Comentary = () => {
       </button>
       <form
         className={`${
-          !open ? "w-80" : "w-0 border-0"
+          !open ? "w-60 md:w-80" : "w-0 border-0"
         } h-auto bg-purple-300 bg-opacity-40 border-2 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
         onSubmit={(ev) => {
           ev.preventDefault();
@@ -28,7 +28,7 @@ const Comentary = () => {
         <div className="flex justify-start pl-1 w-80">
           <button
             className={
-              "bg-red-400 p-1 mr-20 z-90 bg-purple-600 text-white rounded-lg"
+              "bg-red-400 p-1 mr-14 md:mr-20 z-90 bg-purple-600 text-white rounded-lg"
             }
             onClick={() => setOpen(true)}
           >
@@ -40,7 +40,7 @@ const Comentary = () => {
           rows="60"
           cols="40"
           className={`${
-            !open ? "w-80" : "w-0 hidden"
+            !open ? "w-60 md:w-80" : "w-0 hidden"
           } w-90 max-h-20 mb-1 px-2 hover:bg-purple-200 rounded-lg border-2 bg-slate-100 border-black shadow-black shadow-sm `}
           type="text"
           name="search"
