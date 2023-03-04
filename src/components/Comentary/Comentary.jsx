@@ -1,24 +1,27 @@
 import React from "react";
 import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment } from "@fortawesome/free-regular-svg-icons";
 const Comentary = () => {
   const [search, setSearch] = useLocalStorage("search", []);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
-    <div className="fixed z-10 inset-x-1 top-72 flex flex-row-reverse rounded-sm">
+    <div className="fixed z-10 inset-x-1 top-64 mt-36 flex flex-row-reverse rounded-sm">
       <div className="">
         <button
           className={`h-8 rounded-xl bg-red-500 bg-purple-600`}
           onClick={() => setOpen(false)}
         >
           <p className="rounded-lg w-6">
-            <code className={" rounded-lg text-white text-2"}>&lt;</code>
+            <code className={" rounded-lg text-white text-2"}>
+              <FontAwesomeIcon icon={faComment} />
+            </code>
           </p>
         </button>
       </div>
-      <div className=" fixed z-10 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
+      <div className=" fixed z-10 inset-x-1 top-2/4 flex flex-row-reverse rounded-lg ">
         <form
           className={`${
             !open ? "w-60 md:w-80" : "w-0 border-0"
@@ -43,8 +46,8 @@ const Comentary = () => {
             rows="60"
             cols="40"
             className={`${
-              !open ? "w-60 md:w-80" : "w-0 hidden"
-            } w-90 max-h-20 mb-1 px-2 hover:bg-purple-200 rounded-lg border-2 bg-slate-100 border-black shadow-black shadow-sm `}
+              !open ? "w-57 md:w-76" : "w-0 hidden"
+            } max-h-20 mb-1 px-2 hover:bg-purple-200 rounded-lg border-2 bg-slate-100 border-purple-500 shadow-black shadow-sm `}
             type="text"
             name="search"
             required
