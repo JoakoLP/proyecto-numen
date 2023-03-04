@@ -34,7 +34,7 @@ const Comentary = () => {
           >
             x
           </button>
-          <p className=" text-white  text-lg ">Comentarios</p>
+          <p className=" text-white  text-lg font-medium">Comentarios</p>
         </div>
         <textarea
           rows="60"
@@ -54,21 +54,21 @@ const Comentary = () => {
           type="submit"
           className={`${
             !open ? "w-50" : "w-0 hidden"
-          } m-1 text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800`}
+          } m-1 text-white rounded-full whitespace-nowrap bg-[#8a4af3] hover:bg-purple-900 font-bold sm:text-xs py-2 mb-2 px-4 duration-300 hover:shadow-inner hover:shadow-neutral-800`}
         >
           Comentar
         </button>
         <div className="h-60 overflow-x-hidden rounded-xl">
-          <ul className="overflow-y-hidden overflow-x-hidden gitflex flex-col flex-wrap space-y-1  ">
+          <ul className="mr-1 rounded-xl overflow-y-hidden overflow-x-hidden gitflex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
               .reverse()
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" p-3 rounded-lg text-xs flex break-all w-80 items-center rounded-lg border-2 border-purple-300 bg-slate-100 hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className="p-1 rounded-lg text-xs flex break-all w-80 items-center rounded-lg border-2 border-purple-300 bg-slate-100 hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
-                  <p className="bg-slate-200 rounded-lg w-full py-2 pl-1 pr-3 w-72 ">
+                  <p className="bg-slate-200 rounded-lg w-full pt-2 pb-2 pl-2 pr-3 w-72 ">
                     {coment.charAt(0).toUpperCase() + coment.slice(1)}
                   </p>
                 </li>
