@@ -3,13 +3,11 @@ import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 const Comentary = () => {
-  const data = [{ text: "hola" }, { text: "hi" }, { text: "holi" }];
-  const data2 = [];
   const [search, setSearch] = useLocalStorage("search", []);
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed z-50 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
+    <div className="fixed z-10 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
       <button
         className={"h-10 rounded-xl bg-red-500 bg-purple-600 "}
         onClick={() => setOpen(false)}
@@ -20,22 +18,23 @@ const Comentary = () => {
       </button>
       <form
         className={`${
-          !open ? "w-80" : "w-0 "
-        } h-auto  rounded-lg flex flex-col transition-all duration-500`}
+          !open ? "w-80" : "w-0 border-0"
+        } h-auto bg-purple-300 bg-opacity-40 border-2 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
         onSubmit={(ev) => {
           ev.preventDefault();
           setSearch([...search, ev.target.search.value]);
         }}
       >
-        <div className="flex justify-between pl-1 w-80">
+        <div className="flex justify-start pl-1 w-80">
           <button
             className={
-              "bg-red-400 p-1 z-90 bg-purple-600 text-white rounded-lg"
+              "bg-red-400 p-1 mr-20 z-90 bg-purple-600 text-white rounded-lg"
             }
             onClick={() => setOpen(true)}
           >
             x
           </button>
+          <p className=" text-white  text-lg ">Comentarios</p>
         </div>
         <textarea
           rows="60"
@@ -59,17 +58,17 @@ const Comentary = () => {
         >
           Comentar
         </button>
-        <div className="h-1/5 overflow-x-hidden rounded-xl">
-          <ul className=" overflow-y-hidden gitflex flex-col flex-wrap space-y-1  ">
+        <div className="h-60 overflow-x-hidden rounded-xl">
+          <ul className="overflow-y-hidden overflow-x-hidden gitflex flex-col flex-wrap space-y-1  ">
             {search
               .slice(0)
               .reverse()
               .map((coment, index) => (
                 <li
                   key={index}
-                  className=" p-4 rounded-lg max-w-80 flex break-all w-80 items-center rounded-lg border-2 bg-[#f0f2f5] hover:bg-purple-200 border-black shadow-black shadow-sm"
+                  className=" p-3 rounded-lg text-xs flex break-all w-80 items-center rounded-lg border-2 border-purple-300 bg-slate-300 hover:bg-purple-200 border-black shadow-black shadow-sm"
                 >
-                  {coment}
+                  {coment.charAt(0).toUpperCase() + coment.slice(1)}
                 </li>
               ))}
           </ul>
