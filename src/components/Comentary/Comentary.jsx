@@ -8,10 +8,10 @@ const Comentary = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="fixed z-10 inset-x-1 top-64 mt-36 flex flex-row-reverse rounded-sm">
+    <div className="fixed z-10 inset-x-1 top-64 mt-48 flex flex-row-reverse rounded-sm">
       <div className="">
         <button
-          className={`h-8 rounded-xl bg-red-500 bg-purple-600`}
+          className={`h-8 rounded-xl bg-red-500  bg-purple-600`}
           onClick={() => setOpen(false)}
         >
           <p className="rounded-lg w-6">
@@ -21,7 +21,7 @@ const Comentary = () => {
           </p>
         </button>
       </div>
-      <div className=" fixed z-10 inset-x-1 top-2/4 flex flex-row-reverse rounded-lg ">
+      <div className=" fixed z-10 inset-x-1 top-64 mt-56 flex flex-row-reverse rounded-lg ">
         <form
           className={`${
             !open ? "w-60 md:w-80" : "w-0 border-0"
