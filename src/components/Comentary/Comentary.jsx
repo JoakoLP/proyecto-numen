@@ -8,7 +8,7 @@ const Comentary = () => {
 
   return (
     <div className="fixed z-10 inset-x-1 top-72 flex flex-row-reverse rounded-sm">
-      <div className="pl-24">
+      <div className="">
         <button
           className={`h-8 rounded-xl bg-red-500 bg-purple-600`}
           onClick={() => setOpen(false)}
@@ -18,11 +18,11 @@ const Comentary = () => {
           </p>
         </button>
       </div>
-      <div className="fixed z-10 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
+      <div className=" fixed z-10 inset-x-1 top-80 flex flex-row-reverse rounded-lg ">
         <form
           className={`${
             !open ? "w-60 md:w-80" : "w-0 border-0"
-          } h-auto bg-purple-300 bg-opacity-40 border-2 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
+          } max-h-96 bg-purple-300 bg-opacity-40 border-2 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
           onSubmit={(ev) => {
             ev.preventDefault();
             setSearch([...search, ev.target.search.value]);
@@ -61,7 +61,7 @@ const Comentary = () => {
           >
             Comentar
           </button>
-          <div className="h-60 overflow-x-hidden rounded-xl">
+          <div className=" overflow-x-hidden rounded-xl">
             <ul className="mr-1 rounded-xl overflow-y-hidden overflow-x-hidden gitflex flex-col flex-wrap space-y-1  ">
               {search
                 .slice(0)
