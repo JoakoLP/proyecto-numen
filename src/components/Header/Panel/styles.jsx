@@ -2,7 +2,7 @@ export const panelCont =
   "w-full h-min flex justify-between items-center bg-dark-gray";
 
 export const panel =
-  "w-95% box-border flex justify-between m-auto items-center";
+  "w-95% relative box-border flex justify-between m-auto items-center";
 
 export const pcCont = "box-border block m-auto w-140px relative";
 

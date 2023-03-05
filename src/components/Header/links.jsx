@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import shipImg from "../../img/enviosups.svg";
 import docImg from "../../img/fi-rr-document-signed.svg";
 import formImg from "../../img/fi-rr-form.svg";
 import helpImg from "../../img/fi-rr-interrogation.svg";
+import devImg from "../../img/code-slash.svg";
 import * as styles from "./styles";
 
 const Links = () => {
@@ -24,6 +26,14 @@ const Links = () => {
         <img src={shipImg} className={styles.linkImg} alt="" />
         Seguir mi Pedido OCA
       </a>
+      <Link
+        to="/about-us/"
+        className={styles.link}
+        title="Desarrolladores de la página"
+      >
+        <img src={devImg} className={styles.linkImg} alt="" />
+        Desarrolladores
+      </Link>
       {/* <span href="#" className={styles.link}>
         <img src={docImg} className={styles.linkImg} alt="" />
         Subir Comprobantes
