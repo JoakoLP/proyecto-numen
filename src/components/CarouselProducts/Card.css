@@ -8,14 +8,6 @@
     color: white;
 
 }
-.card-button{
-    
-    border-radius: 10%;
-    background-color: blueviolet;
-    box-shadow: 4px 3px 5px 1px gray;
-    
-    
-}
 .card{
     box-shadow: 3px 1px 3px 4px rgb(198, 93, 240);
     margin: 2rem;
