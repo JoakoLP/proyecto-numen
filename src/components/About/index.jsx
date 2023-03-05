@@ -38,36 +38,40 @@ const About = () => {
 
           <Table
             name="Florencia Lopez"
-            linkedin="blablabla"
-            github="blablabla"
-            email="blablabla@gmail.com"
-            cellphone={{ number: 0, string: "" }}
+            img="https://i.imgur.com/oR3zeM9.jpg"
+            linkedin="florence-den"
+            github="fd-lopez"
+            email="fd.lopez@outlook.com"
+            cellphone={{ number: 5491140737401, string: "54 9114 073-7401" }}
             instagram=""
           />
 
           <Table
             name="Angel Ruiz Diaz"
-            linkedin="blablabla"
-            github="blablabla"
-            email="blablabla@gmail.com"
+            img=""
+            linkedin=""
+            github=""
+            email=""
             cellphone={{ number: 0, string: "" }}
             instagram=""
           />
 
           <Table
             name="Noé Navarrete"
-            linkedin="blablabla"
-            github="blablabla"
-            email="blablabla@gmail.com"
+            img=""
+            linkedin=""
+            github=""
+            email=""
             cellphone={{ number: 0, string: "" }}
             instagram=""
           />
 
           <Table
             name="Nahir Soto"
+            img=""
             linkedin="blablabla"
             github="blablabla"
-            email="blablabla@gmail.com"
+            email=""
             cellphone={{ number: 0, string: "" }}
             instagram=""
           />
