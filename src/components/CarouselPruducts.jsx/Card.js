@@ -5,9 +5,9 @@ import '../CarouselPruducts.jsx/Card.css';
 export default function Card(props) {
   
   return (
-    <div className='card bg-black box-content h-32 w-32 p-4 m-2 p-2 rounded-xl '>
+    <div className='card box-content h-32 w-32 p-4 m-2 p-2 rounded-xl '>
       <img 
-      className='product--image'
+      className='product--image object-contain'
       src={props.url} 
       alt='products'
       />

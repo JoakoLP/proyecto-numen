@@ -24,7 +24,7 @@ export const productCards = [
         
         id: 1,
         title:'Producto destacado',
-        url: 'https://images.unsplash.com/photo-1565375706248-2fd61105f01e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fHBjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        url: "https://sites.google.com/site/arquitecturadeunpcw/_/rsrc/1464194215564/conocimiento-del-medio/descarga.jpg",
         price: '$39.99',
         description: '6 cuotas s/interes',
     },

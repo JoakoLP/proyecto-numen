@@ -18,8 +18,11 @@
 }
 .card{
     box-shadow: 3px 1px 3px 4px rgb(198, 93, 240);
+    margin: 2rem;
+    padding: 1rem;
     
 }
 .product--image{
     border-radius: 2%;
+    
 }
