@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Cards from "./components/Cards";
-import CarouselProducts from "./components/CarouselPruducts.jsx/CArouselProducts";
+
 
 
 
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <Cards />
-      <CarouselProducts/>
+      
       
 
     </div>
