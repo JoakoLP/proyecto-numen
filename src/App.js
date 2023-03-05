@@ -4,6 +4,8 @@ import Slider from "./components/Slider/Slider";
 import ComboSec from "./components/Combo";
 import Productos from "./components/Productos/productos";
 import CartProvider from "./contexts/CartProvider";
+import Brands from "./components/Brands";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Slider />
           <ComboSec />
           <Productos />
+          <Brands />
+          <AboutUs />
           <Footer />
         </div>
       </CartProvider>

@@ -2,13 +2,16 @@ import React from "react";
 import Column1 from "./column1";
 import Column2 from "./column2";
 import Column3 from "./column3";
+import imgIcon from "../../img/icons8-circuit-96.png";
 
 function Foot() {
   return (
     <div className="flex flex-col flex-wrap p-5 sm:flex-row lg:flex-nowrap sm:justify-center justify-evenly columns-4">
       {/* column1 */}
-      <div className="flex flex-col w-full md:items-center md:flex-row justify-evenly">
-        <div className="mb-5 text-5xl font-bold text-fuchsia-icon">LOGO</div>
+      <div className="flex flex-col w-full md:flex-row justify-evenly">
+        <div className="mb-5 text-5xl">
+          <img src={imgIcon} alt="" />
+        </div>
         <Column1 />
       </div>
       {/* column2 */}

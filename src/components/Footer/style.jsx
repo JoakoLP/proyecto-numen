@@ -1,3 +1,3 @@
-export const Button = "h-12";
-export const TitleFoot = "text-lg font-bold text-fuchsia-icon";
-export const UlFoot = "text-lg text-white";
+export const Button = " h-9";
+export const TitleFoot = "text-sm font-bold text-purple-700";
+export const UlFoot = "text-sm text-white";
