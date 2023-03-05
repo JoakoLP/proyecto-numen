@@ -7,6 +7,7 @@ import CartProvider from "./contexts/CartProvider";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import ScrollToTop from "./components/About/ScrollToTop";
+import CarouselProducts from "./components/CarouselProducts/CarouselProducts";
 
 
 
@@ -25,6 +26,7 @@ function App() {
                   <>
                     <Slider />
                     <ComboSec />
+                    <CarouselProducts/>
                     <Productos />
                   </>
                 }
