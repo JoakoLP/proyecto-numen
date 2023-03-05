@@ -39,7 +39,7 @@ const Table = ({
   instagram,
 }) => {
   return (
-    <table className={styles.table} border={2}>
+    <table className={styles.table} border={2} title={name}>
       <thead>
         <th colSpan={2} className={styles.imgCont}>
           <img src={img} className={styles.img} alt="" />

@@ -6,7 +6,7 @@ export const img =
   "max-w-[150px] min-h-[150px] min-w-[150px] border-fuchsia-icon border m-auto select-none";
 export const table =
   "bg-black m-3 duration-300 max-w-min border-4 border-double border-fuchsia-icon border-spacing-0 border-collapse rounded-xl inline-block";
-export const tableTitle = "bg-black text-fuchsia-icon border py-1";
+export const tableTitle = "bg-black text-fuchsia-icon border-y py-1";
 export const tableDataName =
   "bg-dark-gray font-semibold px-2 border-ba py-1 border-gray";
 export const tableDataInfo =
