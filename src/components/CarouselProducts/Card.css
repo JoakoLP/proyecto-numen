@@ -1,13 +1,7 @@
 .card-text {
     color: rgb(64, 226, 78)
 }
-.card-title{
-    color: rgb(194, 96, 194);
-}
-.price{
-    color: white;
 
-}
 .card{
     box-shadow: 3px 1px 3px 4px rgb(198, 93, 240);
     margin: 2rem;

@@ -21,7 +21,8 @@ const cards = productCards.map((item) => (
     <div className="container ">
           <h1 className="title-seccion m-auto text-4xl font-bold text-center border-b-2 border-purple-700 w-min text-neutral-200">Productos destacados</h1>
 
-        <Carousel responsive={responsive}>{cards}      
+        <Carousel responsive={responsive}>{cards} 
+            
         </Carousel>
     </div>
     
