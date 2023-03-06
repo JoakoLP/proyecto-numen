@@ -30,7 +30,7 @@ const Product = (props) => {
           </span>
           <button
             onClick={() => {
-              actions.addToCart(data.id);
+              actions.addToCart(data.id, data.name);
             }}
             className="bg-[#8a4af3] self-center select-none text-white font-bold text-sm py-1 sm:py-2 px-2 sm:px-4 rounded duration-100 active:scale-110 active:duration-75 hover:bg-purple-900 hover:shadow-inner hover:shadow-neutral-800 w-min whitespace-nowrap"
           >

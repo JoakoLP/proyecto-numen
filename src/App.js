@@ -7,6 +7,8 @@ import CartProvider from "./contexts/CartProvider";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import ScrollToTop from "./components/About/ScrollToTop";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
           <Footer />
         </CartProvider>
         <ScrollToTop />
+        <ToastContainer pauseOnFocusLoss={false} />
       </Router>
     </div>
   );

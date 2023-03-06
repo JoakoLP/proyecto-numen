@@ -2,6 +2,7 @@ import { createContext, useEffect, useReducer } from "react";
 import { initialState } from "../components/Cart/cartReducer";
 import cartReducer from "../components/Cart/cartReducer";
 import { TYPES } from "../components/Cart/actions";
+import { toast } from "react-toastify";
 
 export const CartContext = createContext();
 
@@ -9,7 +10,27 @@ const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
   const actions = {
-    addToCart: (id) => {
+    addToCart: (id, name) => {
+      const msgTxt = (
+        <div className="text-[rgb(196,36,255,0.8)]">
+          <b className="text-white">{name}</b> agregado al carrito!
+        </div>
+      );
+      toast.success(msgTxt, {
+        position: "bottom-right",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        draggablePercent: 30,
+        progress: undefined,
+        theme: "dark",
+      });
+      console.log(`Producto de id "${id}" agregado al carrito.`);
+      dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+    },
+    addToCartModal: (id) => {
       console.log(`Producto de id "${id}" agregado al carrito.`);
       dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     },

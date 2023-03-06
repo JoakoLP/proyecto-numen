@@ -69,8 +69,8 @@ const About = () => {
           <Table
             name="Nahir Soto"
             img=""
-            linkedin="blablabla"
-            github="blablabla"
+            linkedin=""
+            github=""
             email=""
             cellphone={{ number: 0, string: "" }}
             instagram=""
