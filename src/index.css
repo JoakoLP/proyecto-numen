@@ -6,9 +6,29 @@
   @apply text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3;
 }
 
+@media screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    max-height: 30%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 750px) {
+  .Toastify__toast-container {
+    max-height: 40%;
+  }
+}
+.Toastify__toast-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Toastify__toast-container {
+  max-height: 50%;
+  bottom: 0;
+  z-index: 15;
+}
+
 .Toastify__toast-icon > svg {
   fill: #c424ff;
-  /* background-color: #521687; */
 }
 
 .Toastify__progress-bar-theme--dark {

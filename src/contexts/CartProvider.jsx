@@ -18,7 +18,7 @@ const CartProvider = ({ children }) => {
       );
       toast.success(msgTxt, {
         position: "bottom-right",
-        autoClose: 2500,
+        autoClose: 1000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
