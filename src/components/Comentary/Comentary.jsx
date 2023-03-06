@@ -38,7 +38,7 @@ const Comentary = () => {
             rows="60"
             cols="40"
             className={`${
-              !open ? "w-57 border-2 px-2 mb-1 md:w-76" : ""
+              !open ? "w-57 border-2 px-2 mb-1 md:w-76" : " overflow-y-hidden"
             } max-h-20 hover:bg-purple-200 rounded-lg  bg-slate-100 border-purple-500 shadow-black shadow-sm `}
             type="text"
             name="search"
