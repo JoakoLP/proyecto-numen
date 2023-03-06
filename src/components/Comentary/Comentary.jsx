@@ -12,7 +12,7 @@ const Comentary = () => {
       <div className="">
         <button
           className={`h-8 rounded-xl bg-red-500  bg-purple-600`}
-          onClick={() => setOpen(false)}
+          onClick={() => setOpen(!open)}
         >
           <p className="rounded-lg w-6">
             <code className={" rounded-lg text-white text-2"}>
