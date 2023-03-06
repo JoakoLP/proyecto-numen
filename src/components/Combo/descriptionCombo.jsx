@@ -4,11 +4,11 @@ import { CartContext } from "../../contexts/CartProvider";
 function DescriptionCombo() {
   const [state, dispatch, actions] = useContext(CartContext);
   return (
-    <div className="m-10 h-min whitespace-normal sm:w-[640px] md:w-[768px] self-center flex items-center justify-center flex-col text-white sm:whitespace-nowrap">
+    <div className="m-8 mt-1 xl:mt-8 h-min whitespace-normal sm:w-[640px] md:w-[768px] self-center flex items-center justify-center flex-col text-white sm:whitespace-nowrap">
       <h2 className="my-2 text-3xl font-bold text-center sm:my-5">
         Combo AGILIZÁ TU PC
       </h2>
-      <ul className="text-lg tracking-wide list-disc ">
+      <ul className="space-y-2 text-lg tracking-wide list-disc ">
         <li>Procesador AMD Ryzen 5 5600g 4.4ghz - AM4</li>
         <li>Motherboard MSI X470 GAMING PLUS MAX AM4</li>
         <li>Memoria RAM 16GB 2x8 3200Mhz Corsair Vengance Rgb Pro</li>

@@ -7,7 +7,7 @@ import Logo from "../Header/HeaderMain/logo";
 
 function Foot() {
   return (
-    <div className="flex flex-col flex-wrap p-5 sm:flex-row lg:flex-nowrap sm:justify-center justify-evenly columns-4">
+    <div className="flex flex-col flex-wrap p-2 sm:p-5 sm:flex-row lg:flex-nowrap sm:justify-center justify-evenly columns-4">
       {/* column1 */}
       <div className="flex flex-col w-full md:items-center md:flex-row justify-evenly">
         <div className="flex justify-center w-full md:w-min md:min-w-fit ">
