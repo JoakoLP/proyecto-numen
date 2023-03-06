@@ -31,14 +31,7 @@ const Comentary = () => {
             setSearch([...search, ev.target.search.value]);
           }}
         >
-          <div className={`flex justify-start pl-1 w-80`}>
-            <button
-              className={`
-               bg-red-400 p-1 mr-14 md:mr-20 z-90 bg-purple-600 text-white rounded-lg`}
-              onClick={() => setOpen(true)}
-            >
-              x
-            </button>
+          <div className={`flex pl-16 md:justify-center md:pl-0 w-80`}>
             <p className="text-white  text-lg font-medium">Comentarios</p>
           </div>
           <textarea
