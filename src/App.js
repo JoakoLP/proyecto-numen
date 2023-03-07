@@ -26,7 +26,6 @@ function App() {
                   </>
                 }
               />
-
               <Route path="/about-us" element={<About />} />
             </Routes>
           </div>
