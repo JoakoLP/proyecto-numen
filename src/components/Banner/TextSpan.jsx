@@ -17,7 +17,7 @@ const TextSpan = ({ children }) => {
         "scale3d(1, 1, 1)",
       ],
       transition: {
-        duration: 0.5,
+        duration: 0.6,
 
         type: "spring",
       },
@@ -33,7 +33,7 @@ const TextSpan = ({ children }) => {
         }
       }}
       onAnimationComplete={() => setIsPlaying(false)}
-      className=" hover:text-rose-50 inline-block"
+      className=" hover:text-rose-400 inline-block"
     >
       {children}
     </motion.span>

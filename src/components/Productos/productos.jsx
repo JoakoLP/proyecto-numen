@@ -54,14 +54,17 @@ const Productos = () => {
         <div>
           <div className="pb-2 ">
             <p className="font-bold text-white pb-2">Busqueda</p>
+
+
             <input
               className=" flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap focus:bg-white focus:border-indigo-600"
               type="text"
               name="search"
-              placeholder="Buscar"
+              placeholder="Buscar..."
               value={searchQuery}
               onChange={handleSearch}
             />
+
           </div>
 
           <p className="font-bold text-white">Filtro por Categoria</p>
