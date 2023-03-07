@@ -58,7 +58,7 @@
   background: #521687;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1120px) {
+@media screen and (min-width: 800px) and (max-width: 1100px) {
   .categBtns::-webkit-scrollbar {
     display: initial;
     width: 0px;
@@ -68,7 +68,7 @@
     height: 5px;
   }
 }
-@media screen and (max-width: 800px), (min-width: 1120px) {
+@media screen and (max-width: 800px), (min-width: 1100px) {
   .categBtns::-webkit-scrollbar {
     display: none;
     /* height: 0px;
@@ -84,21 +84,3 @@
   white-space: nowrap;
   overflow-y: clip;
 } */
-input[type="text"],
-select {
-  border-radius: 6px;
-  padding: 8px 15px;
-  border-width: 0px;
-}
-
-input[type="text"]:focus,
-select:focus {
-  outline: none;
-}
-
-#Hero {
-  background-image: url(./img/bg-3.jpg);
-  background-size: cover;
-
-  margin-bottom: 0;
-}

@@ -12,7 +12,7 @@ export const itemImg =
   "shadow-md shadow-purple-900 w-16 h-min roundeds border-[1.5px] border-purple-600";
 export const itemTitleCont =
   "pl-3 h-full text-base flex flex-col justify-between overflow-x-hidden";
-export const itemTitle = "whitespace-nowrap md:whitespace-normal";
+export const itemTitle = "select-text whitespace-nowrap md:whitespace-normal";
 export const price = "flex w-min h-min text-xs pl-1 mt-5px whitespace-nowrap";
 export const priceQuant =
   "flex min-w-min items-center justify-between md:ml-2 mt-3 md:mt-0";
@@ -37,7 +37,7 @@ export const total = "text-sm sm:text-base font-bold whitespace-nowrap";
 export const totalPagar = "w-min flex space-x-4 items-center";
 
 export const pagarBtn =
-  "bg-[#8a4af3] hover:bg-purple-900  text-white font-bold sm:text-sm py-1.5 px-3 rounded-md duration-200 hover:shadow-inner hover:shadow-neutral-800";
+  "bg-[#8a4af3] hover:bg-purple-900  text-white font-bold sm:text-sm py-1.5 px-3 rounded duration-200 hover:shadow-inner hover:shadow-neutral-800 active:scale-90 active:duration-75";
 
 export const clearCart = "flex whitespace-nowrap";
 

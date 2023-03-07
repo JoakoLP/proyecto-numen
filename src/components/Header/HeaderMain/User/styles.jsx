@@ -1,15 +1,15 @@
 export const user = "flex w-10% h-full justify-end items-center min-w-215px";
 
 export const account =
-  "flex w-78% justify-center items-center mx-4 cursor-pointer";
+  "flex sm:w-78% justify-center items-center sm:mx-4 cursor-pointer";
 
 export const cart =
-  "flex w-78% justify-center items-center mx-4 cursor-pointer";
+  "flex sm:w-78% justify-center items-center sm:mx-4 cursor-pointer";
 
-export const imgUser = "h-25px w-25px min-w-25px max-w-25px";
+export const imgUser = "h-25px w-25px min-w-25px mx-3 sm:mx-0 max-w-25px";
 
 export const userText =
-  "text-white block whitespace-nowrap m-2.5 text-sm box-border";
+  "hidden sm:block text-white whitespace-nowrap m-2.5 text-sm box-border";
 
 export const counter = "relative top-3%";
 export const counterNumber =

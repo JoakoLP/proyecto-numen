@@ -1,18 +1,14 @@
 import React, { useContext, useState } from "react";
 import Product from "./Product";
 import { CartContext } from "../../contexts/CartProvider";
-import { motion } from "framer-motion";
 
 const Productos = () => {
   // useContext
   const [state, dispatch, actions] = useContext(CartContext);
   const data = state.products;
 
-
-
   // console.log(data);
   const [products, setProducts] = useState(data);
-  const [searchQuery, setSearchQuery] = useState("");
 
   //   Filter
   const filterType = (category) => {
@@ -23,24 +19,8 @@ const Productos = () => {
     );
   };
 
-
-
-  //Search list of objects
-  const handleSearch = (event) => {
-    const query = event.target.value
-    setSearchQuery(query)
-
-    const searchList = data.filter((item) => {
-      return item.name.toLowerCase().indexOf(query.toLowerCase()) !== -1
-    })
-
-    setProducts(searchList)
-  };
-
-
-
   const styleBtn =
-    "m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 active:scale-75 active:duration-100 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2";
+    "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
 
   return (
     <div className="max-w-[1640px] m-auto px-1 sm:px-4 py-4">
@@ -52,26 +32,13 @@ const Productos = () => {
       <div className="flex flex-col justify-between pt-4 lg:flex-row">
         {/* Fliter Type */}
         <div>
-          <div className="pb-2 ">
-            <p className="font-bold text-white pb-2">Busqueda</p>
-
-
-            <input
-              className=" flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap focus:bg-white focus:border-indigo-600"
-              type="text"
-              name="search"
-              placeholder="Buscar..."
-              value={searchQuery}
-              onChange={handleSearch}
-            />
-
-          </div>
-
           <p className="font-bold text-white">Filtro por Categoria</p>
 
           <div className="flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap">
-
-            <button onClick={() => setProducts(data)} className={styleBtn}>
+            <button
+              onClick={() => setProducts(data)}
+              className={styleBtn + " font-medium "}
+            >
               Todo
             </button>
             <button onClick={() => filterType("CPU")} className={styleBtn}>
@@ -109,11 +76,11 @@ const Productos = () => {
       </div>
 
       {/* display productos */}
-      <motion.div className="grid gap-6 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+      <div className="grid gap-6 py-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {products.map((product) => (
           <Product key={product.id} data={product} />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

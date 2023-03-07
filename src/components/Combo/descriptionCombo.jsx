@@ -20,7 +20,7 @@ function DescriptionCombo() {
         onClick={() => {
           actions.addToCart(15, state.products[15].name);
         }}
-        className="text-white rounded-full whitespace-nowrap bg-[#8a4af3] duration-300 active:scale-125 active:duration-100 hover:bg-purple-900 hover:shadow-inner hover:shadow-neutral-800 font-bold sm:text-xs py-2 px-4"
+        className="text-white rounded whitespace-nowrap bg-[#8a4af3] duration-100 active:scale-110 active:duration-100 hover:bg-purple-900 hover:shadow-inner hover:shadow-neutral-800 font-bold sm:text-xs py-2 px-4"
       >
         Agregar al carrito
       </button>

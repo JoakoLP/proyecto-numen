@@ -17,7 +17,7 @@ const CartProvider = ({ children }) => {
   let arrayCount = JSON.parse(storagedCount);
 
   let cartState;
-  if (arrayCart.length > 1) {
+  if (arrayCart != null && arrayCart.length > 0) {
     cartState = {
       ...initialState,
       cart: [...arrayCart],
@@ -37,7 +37,7 @@ const CartProvider = ({ children }) => {
     localStorage.setItem("cart", stringCart);
     localStorage.setItem("total", stringTotal);
     localStorage.setItem("count", stringCount);
-  }, [state.cart]);
+  }, [state]);
 
   const actions = {
     addToCart: (id, name) => {
