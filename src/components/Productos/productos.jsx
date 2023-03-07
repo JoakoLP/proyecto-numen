@@ -23,7 +23,7 @@ const Productos = () => {
     "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
 
   return (
-    <div className="max-w-[1640px] m-auto px-4 py-4">
+    <div className="max-w-[1640px] m-auto px-1 sm:px-4 py-4">
       <h1 className="m-auto text-4xl font-bold text-center border-b-2 border-purple-700 w-min text-neutral-200">
         Componentes
       </h1>
