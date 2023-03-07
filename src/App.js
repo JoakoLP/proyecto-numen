@@ -23,6 +23,7 @@ function App() {
                     <Slider />
                     <ComboSec />
                     <Productos />
+                    <ToastContainer pauseOnFocusLoss={false} newestOnTop />
                   </>
                 }
               />
@@ -30,8 +31,9 @@ function App() {
             </Routes>
           </div>
           <Footer />
-        </div>
-      </CartProvider>
+        </CartProvider>
+        <ScrollToTop />
+      </Router>
     </div>
   );
 }
