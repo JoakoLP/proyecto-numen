@@ -1,6 +1,6 @@
 export const emptyCart =
   "flex w-full h-[37vh] justify-center flex-wrap content-center";
-export const empCarTxt = "h-min text-purple-600 text-2xl";
+export const empCarTxt = "h-min text-purple-600 text-center text-2xl";
 export const cartTitle = "text-purple-600 text-base";
 export const cart =
   "overflow-y-auto min-h-min max-h-[75vh] min-w-full max-w-full flex flex-col justify-between";
