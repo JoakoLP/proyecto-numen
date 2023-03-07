@@ -8,8 +8,11 @@ const Productos = () => {
   const [state, dispatch, actions] = useContext(CartContext);
   const data = state.products;
 
+
+
   // console.log(data);
   const [products, setProducts] = useState(data);
+  const [searchQuery, setSearchQuery] = useState("");
 
   //   Filter
   const filterType = (category) => {
@@ -19,6 +22,22 @@ const Productos = () => {
       })
     );
   };
+
+
+
+  //Search list of objects
+  const handleSearch = (event) => {
+    const query = event.target.value
+    setSearchQuery(query)
+
+    const searchList = data.filter((item) => {
+      return item.name.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    })
+
+    setProducts(searchList)
+  };
+
+
 
   const styleBtn =
     "m-1 mx-2 px-4 border-[#8a4af3] text-neutral-200 bg-purple-700 active:scale-75 active:duration-100 hover:bg-purple-900 hover:text-white rounded-full duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105 p-2";
@@ -33,9 +52,22 @@ const Productos = () => {
       <div className="flex flex-col justify-between pt-4 lg:flex-row">
         {/* Fliter Type */}
         <div>
+          <div className="pb-2 ">
+            <p className="font-bold text-white pb-2">Busqueda</p>
+            <input
+              className=" flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap focus:bg-white focus:border-indigo-600"
+              type="text"
+              name="search"
+              placeholder="Buscar"
+              value={searchQuery}
+              onChange={handleSearch}
+            />
+          </div>
+
           <p className="font-bold text-white">Filtro por Categoria</p>
 
           <div className="flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap">
+
             <button onClick={() => setProducts(data)} className={styleBtn}>
               Todo
             </button>

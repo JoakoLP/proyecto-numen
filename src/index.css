@@ -55,3 +55,14 @@
   white-space: nowrap;
   overflow-y: clip;
 } */
+input[type="text"],
+select {
+  border-radius: 6px;
+  padding: 8px 15px;
+  border-width: 0px;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+}
