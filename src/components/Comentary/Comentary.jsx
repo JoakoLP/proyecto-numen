@@ -25,7 +25,7 @@ const Comentary = () => {
         <form
           className={`${
             !open ? "w-60 md:w-80 border-2" : "w-0  "
-          } max-h-96 bg-purple-300 bg-opacity-40 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
+          } max-h-96 bg-purple-400 bg-opacity-60 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
           onSubmit={(ev) => {
             ev.preventDefault();
             setSearch([...search, ev.target.search.value]);
