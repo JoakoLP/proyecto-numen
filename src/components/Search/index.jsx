@@ -19,9 +19,7 @@ const SearchSect = () => {
   } else {
     searchArray = [...data];
   }
-  // console.log(searchArray);
 
-  // console.log(data);
   const [products, setProducts] = useState(searchArray);
 
   //   Filter
@@ -32,10 +30,11 @@ const SearchSect = () => {
       })
     );
   };
+
   useEffect(() => {
     setProducts(searchArray);
   }, [searchData]);
-  console.log(products);
+
   const styleBtn =
     "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
 
