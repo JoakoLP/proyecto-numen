@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { SearchContext } from "../../../contexts/SearchProvider";
 import { useDisableBodyScroll } from "./User/CartModel/useDisableBodyScroll";
 import { useEscapeToClose } from "./User/CartModel/useEscapeToClose";
+import { SearchOnEnter } from "./searchOnEnter";
 
 const SearchMobile = ({ status, setStatus }) => {
   useDisableBodyScroll(status);
@@ -21,6 +22,8 @@ const SearchMobile = ({ status, setStatus }) => {
     setSearchData(searchField);
     setSearchField("");
   };
+
+  SearchOnEnter(searchField, handleClick);
 
   const handleChildElementClick = (e) => {
     e.stopPropagation();
