@@ -84,3 +84,8 @@
   white-space: nowrap;
   overflow-y: clip;
 } */
+
+#Hero {
+  background-image: url(./img/bg-3.jpg);
+  background-size: cover;
+}
