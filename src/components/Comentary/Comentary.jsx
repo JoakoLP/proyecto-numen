@@ -8,10 +8,12 @@ const Comentary = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="fixed z-10 flex flex-row-reverse mt-48 rounded-sm inset-x-1 top-64">
+    <div className={`${!open ? "" : " w-min"
+      } fixed z-10 flex flex-col items-end min-h-fit max-h-min rounded-sm bottom-2 right-0 sm:bottom-4 md:bottom-6 lg:bottom-8`}>
       <div className="">
         <button
-          className={`h-8 rounded-xl bg-red-500  bg-purple-600`}
+          className={`{${!open ? "" : " mr-2 sm:mr-4 md:mr-6 lg:mr-8"
+            } h-8 lg:h-10 w-8 lg:w-10 flex justify-center items-center rounded-xl bg-purple-600 `}
           onClick={() => setOpen(!open)}
         >
           <p className="w-6 rounded-lg">
@@ -21,10 +23,11 @@ const Comentary = () => {
           </p>
         </button>
       </div>
-      <div className="fixed z-10 flex flex-row-reverse mt-56 rounded-lg inset-x-1 top-64 ">
+      <div className={`${!open ? "" : "w-0 h-0 overflow-hidden invisible"
+        } z-10 flex flex-row-reverse rounded-lg w-min`}>
         <form
-          className={`${!open ? "w-60 md:w-80 border-2" : "w-0  "
-            } max-h-96 bg-purple-300 bg-opacity-40 border-purple-900 rounded-lg flex flex-col transition-all duration-500`}
+          className={`${!open ? "w-60 md:w-80 border-2 h-min" : ""
+            } bg-purple-400 bg-opacity-60 border-purple-900 max-h-[290px] rounded-lg flex flex-col transition-all duration-500`}
           onSubmit={(ev) => {
             ev.preventDefault();
             setSearch([...search, ev.target.search.value]);
@@ -53,8 +56,8 @@ const Comentary = () => {
           >
             Comentar
           </button>
-          <div className="overflow-x-hidden  rounded-xl">
-            <ul className="flex-col flex-wrap mr-1 space-y-1 overflow-x-hidden overflow-y-hidden  rounded-xl gitflex">
+          <div className="overflow-x-hidden max-h-[50%] rounded-xl">
+            <ul className="flex-col flex-wrap max-h-[100%] mr-1 space-y-1 rounded-xl gitflex">
               {search
                 .slice(0)
                 .reverse()
@@ -63,7 +66,7 @@ const Comentary = () => {
                     key={index}
                     className="flex items-center p-1 text-xs break-all border-2 border-black border-purple-300 rounded-lg shadow-sm w-80 bg-slate-100 hover:bg-purple-200 shadow-black"
                   >
-                    <p className="w-full pt-2 pb-2 pl-2 pr-3 rounded-lg bg-slate-200 w-72 ">
+                    <p className="pt-2 pb-2 pl-2 pr-3 rounded-lg bg-slate-200 w-72">
                       {coment.charAt(0).toUpperCase() + coment.slice(1)}
                     </p>
                   </li>
@@ -72,7 +75,7 @@ const Comentary = () => {
           </div>
         </form>
       </div>
-    </div>
+    </div >
   );
 };
 
