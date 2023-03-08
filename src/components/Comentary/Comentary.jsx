@@ -23,10 +23,10 @@ const Comentary = () => {
           </p>
         </button>
       </div>
-      <div className={`${!open ? "" : "w-0 h-0 overflow-hidden invisible"
+      <div className={`${!open ? "" : " overflow-hidden "
         } z-10 flex flex-row-reverse rounded-lg w-min`}>
         <form
-          className={`${!open ? "w-60 md:w-80 border-2 h-min" : ""
+          className={`${!open ? "w-60 md:w-80 border-2 h-min" : " w-0 h-0 "
             } bg-purple-400 bg-opacity-60 border-purple-900 max-h-[290px] rounded-lg flex flex-col transition-all duration-500`}
           onSubmit={(ev) => {
             ev.preventDefault();
