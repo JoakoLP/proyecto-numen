@@ -53,7 +53,7 @@ const SearchSect = () => {
 
           <div className="flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap">
             <button
-              onClick={() => setProducts(data)}
+              onClick={() => setProducts(searchArray)}
               className={styleBtn + " font-medium "}
             >
               Todo
