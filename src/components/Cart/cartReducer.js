@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { TYPES } from "./actions";
 
 const initialState = {

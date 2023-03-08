@@ -6,21 +6,38 @@ import Productos from "./components/Productos/productos";
 import CartProvider from "./contexts/CartProvider";
 import Brands from "./components/Brands";
 import AboutUs from "./components/AboutUs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/About";
+import ScrollToTop from "./components/About/ScrollToTop";
 
 function App() {
   return (
     <div className="select-none bg-dark-gray">
-      <CartProvider>
-        <Header />
-        <div className="mt-[104px] md:mt-[134px]">
-          <Slider />
-          <ComboSec />
-          <Productos />
+      <Router>
+        <CartProvider>
+          <Header />
+          <div className="mt-[104px] md:mt-[134px] min-h-[65vh]">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Slider />
+                    <ComboSec />
+                    <Productos />
+                  </>
+                }
+              />
+
+              <Route path="/about-us" element={<About />} />
+            </Routes>
+          </div>
           <Brands />
           <AboutUs />
           <Footer />
-        </div>
-      </CartProvider>
+        </CartProvider>
+        <ScrollToTop />
+      </Router>
     </div>
   );
 }

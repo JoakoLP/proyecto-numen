@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./style";
+import { Button, ButtonImg } from "./style";
 
 import Facebook from "./imgProvisorio/facebook.svg";
 import Instagram from "./imgProvisorio/instagram.svg";
@@ -11,24 +11,24 @@ import Telegram from "./imgProvisorio/telegram.svg";
 function Buttons() {
   return (
     <div className="flex justify-center">
-      <div className="flex space-x-5 sm:space-x-10">
-        <a href="#">
-          <img src={Facebook} alt="Facebook" className={Button} />
+      <div className="flex justify-between mx-2.5 space-x-2 w-min min-w-fit sm:space-x-5">
+        <a href="#" className={Button}>
+          <img src={Facebook} alt="Facebook" className={ButtonImg} />
         </a>
-        <a href="#">
-          <img src={Instagram} alt="Instagram" className={Button} />
+        <a href="#" className={Button}>
+          <img src={Instagram} alt="Instagram" className={ButtonImg} />
         </a>
-        <a href="#">
-          <img src={Twitter} alt="Twitter" className={Button} />
+        <a href="#" className={Button}>
+          <img src={Twitter} alt="Twitter" className={ButtonImg} />
         </a>
-        <a href="#">
-          <img src={WhatsApp} alt="WhatsApp" className={Button} />
+        <a href="#" className={Button}>
+          <img src={WhatsApp} alt="WhatsApp" className={ButtonImg} />
         </a>
-        <a href="#">
-          <img src={Messenger} alt="Messenger" className={Button} />
+        <a href="#" className={Button}>
+          <img src={Messenger} alt="Messenger" className={ButtonImg} />
         </a>
-        <a href="#">
-          <img src={Telegram} alt="Telegram" className={Button} />
+        <a href="#" className={Button}>
+          <img src={Telegram} alt="Telegram" className={ButtonImg} />
         </a>
       </div>
     </div>
