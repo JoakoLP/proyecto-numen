@@ -21,9 +21,6 @@ const HeaderMain = () => {
           Desarrolladores
         </Link>
         <Logo />
-        {/* <div className={styles.iconCont}>
-          <img src={imgIcon} alt="" className={styles.icon} />
-        </div> */}
         <Search />
         <User />
       </div>

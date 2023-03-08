@@ -16,11 +16,16 @@ export const formContainer = "flex w-full justify-between items-center";
 
 export const search =
   "hidden md:flex min-w-[45%] lg:w-full h-min relative items-center justify-center";
+// peer/field peer-focus/search:flex peer-focus/search:fixed peer-focus/search:z-10 peer-focus/search:top-5 peer-focus/search:w-full
 export const searchForm =
   "w-65% m-auto flex justify-between border border-white rounded-lg py-5px px-7px bg-darker-gray items-center";
 export const searchTxt =
   " text-slate-300 w-full bg-darker-gray h-full border-none outline-0 text-sm placeholder:text-purple-500 placeholder:opacity-40";
-export const lupa = "bg-purple-700 rounded-10px border-none";
+
+export const lupaMobile =
+  "absolute mx-auto inset-x-0 md:hidden bg-purple-700 rounded-10px border-none w-fit";
+// peer/search focus:opacity-0 peer-focus/field:opacity-0
+export const lupa = "bg-purple-700 rounded-10px border-none min-w-fit";
 export const lupaImg = "h-22px w-22px m-0.7em max-w-22px max-h-22px";
 
 export const link =
