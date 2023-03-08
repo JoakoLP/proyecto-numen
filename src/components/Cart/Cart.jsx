@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../contexts/CartProvider";
 import CartItem from "./CartItem";
 import * as styles from "./styles";
@@ -20,6 +20,9 @@ const clearCart = (
 const Cart = () => {
   const [state, dispatch, actions] = useContext(CartContext);
   const { products, cart, total } = state;
+
+  const [cartList, setCartList] = useState([]);
+  const showCartList = localStorage.getItem("cartList");
 
   if (cart.length === 0) {
     return (
@@ -61,5 +64,4 @@ const Cart = () => {
     );
   }
 };
-
 export default Cart;

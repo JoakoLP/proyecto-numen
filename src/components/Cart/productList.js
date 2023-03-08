@@ -6,6 +6,7 @@ export const productList = [
     category: "Notebooks",
     subCategory: "Notebooks AMD",
     desc: null,
+    brand: "Kelyx",
     specs: {
       General: {
         Color: "",
@@ -59,6 +60,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/rB9iSP2.jpg",
     reputation: 2,
+    brand: "AMD",
   },
   {
     id: 3,
@@ -69,6 +71,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/rB9iSP2.jpg",
     reputation: 3,
+    brand: "HP",
   },
   {
     id: 4,
@@ -79,6 +82,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/aivzFQG.jpg",
     reputation: 4,
+    brand: "AMD",
   },
   {
     id: 5,
@@ -89,6 +93,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/wbrrEaU.jpg",
     reputation: 4,
+    brand: "AMD",
   },
   {
     id: 6,
@@ -99,6 +104,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/8YqDAb4.jpg",
     reputation: 2,
+    brand: "Hyundai",
   },
   {
     id: 7,
@@ -109,6 +115,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/tuw83yQ.jpg",
     reputation: 2,
+    brand: "Gfast",
   },
   {
     id: 8,
@@ -119,6 +126,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/67S7x6W.jpg",
     reputation: 3,
+    brand: "Asus",
   },
   {
     id: 9,
@@ -129,6 +137,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/3LO2m4X.jpg",
     reputation: 2,
+    brand: "Asus",
   },
   {
     id: 10,
@@ -139,6 +148,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/RvTS4BE.jpg",
     reputation: 4,
+    brand: "Asus",
   },
   {
     id: 11,
@@ -149,6 +159,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/oH5XBgM.jpg",
     reputation: 4,
+    brand: "Lenovo",
   },
   {
     id: 12,
@@ -159,6 +170,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/UUpfTuS.jpg",
     reputation: 2,
+    brand: "AMD",
   },
   {
     id: 13,
@@ -169,6 +181,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/z60njkV.jpg",
     reputation: 3,
+    brand: "AMD",
   },
   {
     id: 14,
@@ -179,6 +192,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/7dfL6ZA.jpg",
     reputation: 3,
+    brand: "AMD",
   },
   {
     id: 15,
@@ -189,6 +203,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/7dfL6ZA.jpg",
     reputation: 4,
+    brand: "AMD",
   },
   {
     id: 16,
@@ -199,6 +214,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/7dfL6ZA.jpg",
     reputation: 4,
+    brand: "AMD",
   },
   {
     id: 17,
@@ -209,6 +225,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/wWaBk9w.jpg",
     reputation: 5,
+    brand: "ADM",
   },
   {
     id: 18,
@@ -219,6 +236,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/s3XCZRJ.jpg",
     reputation: 2,
+    brand: "Intel",
   },
   {
     id: 19,
@@ -229,6 +247,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/c1f5rq5.jpg",
     reputation: 3,
+    brand: "Intel",
   },
   {
     id: 20,
@@ -239,6 +258,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/7P7op90.jpg",
     reputation: 3,
+    brand: "Intel",
   },
   {
     id: 21,
@@ -249,6 +269,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/HdunYDX.jpg",
     reputation: 3,
+    brand: "Intel",
   },
   {
     id: 22,
@@ -259,6 +280,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/ymzPn6Q.png",
     reputation: 4,
+    brand: "Intel",
   },
   {
     id: 23,
@@ -269,6 +291,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/W0BVnB5.jpg",
     reputation: 4,
+    brand: "Intel",
   },
   {
     id: 24,
@@ -279,6 +302,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/fyaPD9R.jpg",
     reputation: 4,
+    brand: "Intel",
   },
   {
     id: 25,
@@ -289,6 +313,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/ekFCtVy.jpg",
     reputation: 5,
+    brand: "Intel",
   },
   {
     id: 26,
@@ -299,6 +324,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/ZTVe8MP.jpg",
     reputation: 5,
+    brand: "Intel",
   },
   {
     id: 27,
@@ -309,6 +335,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/NrAqUGf.jpg",
     reputation: 1,
+    brand: "MSI",
   },
   {
     id: 28,
@@ -319,6 +346,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/pnRw00b.png",
     reputation: 2,
+    brand: "GIGABYTE",
   },
   {
     id: 29,
@@ -329,6 +357,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/Zdl8qeS.png",
     reputation: 2,
+    brand: "MSI",
   },
   {
     id: 30,
@@ -339,6 +368,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/wvVqfTJ.png",
     reputation: 3,
+    brand: "MSI",
   },
   {
     id: 31,
@@ -349,6 +379,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/AaOGcTO.png",
     reputation: 4,
+    brand: "GIGABYTE",
   },
   {
     id: 32,
@@ -359,6 +390,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/9ZlXvLh.jpg",
     reputation: 5,
+    brand: "MSI",
   },
   {
     id: 33,
@@ -369,6 +401,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/DIQU4qT.jpg",
     reputation: 5,
+    brand: "Asus",
   },
   {
     id: 34,
@@ -379,6 +412,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/Tv9OTnX.png",
     reputation: 1,
+    brand: "Asrock",
   },
   {
     id: 35,
@@ -389,6 +423,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/HmYB8lf.png",
     reputation: 2,
+    brand: "GIGABYTE",
   },
   {
     id: 36,
@@ -399,6 +434,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/Ajj6qRB.jpg",
     reputation: 3,
+    brand: "GIGABYTE",
   },
   {
     id: 37,
@@ -409,6 +445,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/NnP6v0l.png",
     reputation: 4,
+    brand: "GIGABYTE",
   },
   {
     id: 38,
@@ -419,6 +456,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/IMjh3xw.png",
     reputation: 5,
+    brand: "GIGABYTE",
   },
   {
     id: 39,
@@ -429,6 +467,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/154FaCh.jpg",
     reputation: 5,
+    brand: "Asus",
   },
   {
     id: 40,
@@ -439,6 +478,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/XWZWq2m.jpg",
     reputation: 3,
+    brand: "Kingston",
   },
   {
     id: 41,
@@ -469,6 +509,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/NzDHqIw.jpg",
     reputation: 3,
+    brand: "AMD",
   },
   {
     id: 44,
@@ -479,6 +520,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/AWAUgOf.jpg",
     reputation: 4,
+    brand: "AMD",
   },
   {
     id: 45,
@@ -489,6 +531,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/6Td9lkK.jpg",
     reputation: 5,
+    brand: "AMD",
   },
   {
     id: 46,
@@ -499,6 +542,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/LmERJXL.jpg",
     reputation: 4,
+    brand: "AMD",
   },
   {
     id: 47,
@@ -509,6 +553,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/TOkuqgE.jpg",
     reputation: 3,
+    brand: "Intel",
   },
   {
     id: 48,
@@ -519,6 +564,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/EktKttB.jpg",
     reputation: 4,
+    brand: "Intel",
   },
   {
     id: 49,
@@ -529,6 +575,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/eDJAJ6J.jpg",
     reputation: 5,
+    brand: "Intel",
   },
   {
     id: 50,
@@ -539,6 +586,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/917WitE.jpg",
     reputation: 2,
+    brand: "GIGABYTE",
   },
   {
     id: 51,
@@ -549,6 +597,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/DPpNdew.jpg",
     reputation: 4,
+    brand: "MSI",
   },
   {
     id: 52,
@@ -559,6 +608,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/nsvoUWH.jpg",
     reputation: 5,
+    brand: "MSI",
   },
   {
     id: 53,
@@ -579,6 +629,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/eQ02nFs.jpg",
     reputation: 4,
+    brand: "MSI",
   },
   {
     id: 55,
@@ -619,6 +670,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/2SXQoCj.jpg",
     reputation: 5,
+    brand: "WD",
   },
   {
     id: 59,
@@ -639,6 +691,7 @@ export const productList = [
     desc: null,
     img: "https://i.imgur.com/0DAu0iI.jpg",
     reputation: 4,
+    brand: "Samsung",
   },
   // {
   //   id: 6,
