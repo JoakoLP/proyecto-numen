@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SearchSect from "./components/Search";
 import SearchProvider from "./contexts/SearchProvider";
+import Comentary from "./components/Comentary/Comentary";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                       <Slider />
                       <ComboSec />
                       <Productos />
+                      <Comentary />
                       <ToastContainer pauseOnFocusLoss={false} newestOnTop />
                     </>
                   }
