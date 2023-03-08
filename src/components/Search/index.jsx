@@ -35,6 +35,18 @@ const SearchSect = () => {
     setProducts(searchArray);
   }, [searchData]);
 
+  const emptyMessage = () => {
+    if (products.length < 1) {
+      return (
+        <div className="flex justify-center py-4">
+          <p className="text-center text-white">
+            No se encontraron coincidencias con <i>{searchData}</i>.
+          </p>
+        </div>
+      );
+    }
+  };
+
   const styleBtn =
     "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
 
@@ -97,6 +109,7 @@ const SearchSect = () => {
           <Product key={product.id} data={product} />
         ))}
       </div>
+      {emptyMessage()}
     </div>
   );
 };

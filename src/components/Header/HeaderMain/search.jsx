@@ -4,6 +4,7 @@ import imgSearch from "../../../img/fi-rr-search.svg";
 import { Link } from "react-router-dom";
 import { SearchContext } from "../../../contexts/SearchProvider";
 import SearchMobile from "./searchMobile";
+import { SearchOnEnter } from "./searchOnEnter";
 
 const Search = () => {
   const [searchData, setSearchData] = useContext(SearchContext);
@@ -19,6 +20,8 @@ const Search = () => {
   };
 
   const [modalStatus, setModalStatus] = useState(false);
+
+  SearchOnEnter(searchField, handleClick);
 
   return (
     <>
@@ -37,11 +40,7 @@ const Search = () => {
             value={searchField}
             onChange={handleChange}
           />
-          <button
-            className={styles.lupa}
-            onClick={handleClick}
-            // onSubmit={handleClick}
-          >
+          <button className={styles.lupa} onClick={handleClick}>
             <Link to="/search/">
               <img className={styles.lupaImg} src={imgSearch} alt="" />
             </Link>
