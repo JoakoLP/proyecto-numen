@@ -33,7 +33,15 @@ function App() {
                   }
                 />
                 <Route path="/about-us" element={<About />} />
-                <Route path="/search" element={<SearchSect />} />
+                <Route
+                  path="/search"
+                  element={
+                    <>
+                      <SearchSect />
+                      <ToastContainer pauseOnFocusLoss={false} newestOnTop />
+                    </>
+                  }
+                />
               </Routes>
             </div>
             <Footer />
