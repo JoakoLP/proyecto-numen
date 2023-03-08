@@ -1,12 +1,10 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider/Slider";
-import Comentary from "./components/Comentary/Comentary";
 import ComboSec from "./components/Combo";
 import Productos from "./components/Productos/productos";
 import CartProvider from "./contexts/CartProvider";
 import Brands from "./components/Brands";
-import AboutUs from "./components/AboutUs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import ScrollToTop from "./components/About/ScrollToTop";
@@ -30,7 +28,7 @@ function App() {
                     <>
                       <Slider />
                       <ComboSec />
-                      <Productos /> <Comentary />
+                      <Productos />
                       <ToastContainer pauseOnFocusLoss={false} newestOnTop />
                     </>
                   }
@@ -48,7 +46,6 @@ function App() {
               </Routes>
             </div>
             <Brands />
-            <AboutUs />
             <Footer />
           </SearchProvider>
         </CartProvider>
