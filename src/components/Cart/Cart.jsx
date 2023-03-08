@@ -39,7 +39,7 @@ const Cart = () => {
             <CartItem
               key={item.id}
               data={item}
-              addToCart={actions.addToCart}
+              addToCart={actions.addToCartModal}
               deleteFromCart={actions.deleteFromCart}
               deleteAllItems={actions.deleteAllItems}
             />

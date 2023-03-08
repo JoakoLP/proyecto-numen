@@ -13,4 +13,4 @@ export const userText =
 
 export const counter = "relative top-3%";
 export const counterNumber =
-  "rounded-full bg-purple-700 p-1 w-7 text-sm text-center text-white";
+  "rounded-full bg-purple-700 p-1 min-w-[20px] box-content text-sm text-center text-white";

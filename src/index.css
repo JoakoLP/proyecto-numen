@@ -6,6 +6,35 @@
   @apply text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3;
 }
 
+@media screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    max-height: 30% !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 750px) {
+  .Toastify__toast-container {
+    max-height: 40% !important;
+  }
+}
+.Toastify__toast-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Toastify__toast-container {
+  max-height: 60%;
+  bottom: 0;
+  z-index: 15;
+}
+
+.Toastify__toast-icon > svg {
+  fill: #c424ff;
+}
+
+.Toastify__progress-bar-theme--dark {
+  background-color: #c424ff;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 12px;

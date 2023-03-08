@@ -39,10 +39,18 @@ const Table = ({
   instagram,
 }) => {
   return (
-    <table className={styles.table} border={2} title={name}>
-      <thead>
+    <table className={styles.table} border={2}>
+      <thead title={name}>
         <th colSpan={2} className={styles.imgCont}>
-          <img src={img} className={styles.img} alt="" />
+          {img ? (
+            <img src={img} className={styles.img} alt="" />
+          ) : (
+            <img
+              src="https://i.imgur.com/1yPFyFi.png"
+              className={styles.img + " p-4"}
+              alt=""
+            />
+          )}
         </th>
       </thead>
       <tbody>
@@ -54,54 +62,75 @@ const Table = ({
         <tr>
           <td className={styles.tableDataName}>Linkedin</td>
           <td className={styles.tableDataInfo}>
-            <a href={"https://www.linkedin.com/in/" + linkedin} target="_blank">
-              {linkedin}
-            </a>
+            {linkedin ? (
+              <a
+                href={"https://www.linkedin.com/in/" + linkedin}
+                target="_blank"
+              >
+                {linkedin}
+              </a>
+            ) : (
+              <p>Indefinido</p>
+            )}
           </td>
         </tr>
         <tr>
           <td className={styles.tableDataName}>Github</td>
           <td className={styles.tableDataInfo}>
-            <a href={"https://github.com/" + github} target="_blank">
-              {github}
-            </a>
+            {github ? (
+              <a href={"https://github.com/" + github} target="_blank">
+                {github}
+              </a>
+            ) : (
+              <p>Indefinido</p>
+            )}
           </td>
         </tr>
         <tr>
           <td className={styles.tableDataName}>E-Mail</td>
           <td className={styles.tableDataInfo}>
-            <a href={"mailto:" + email}>{email}</a>
+            {email ? (
+              <a href={"mailto:" + email}>{email}</a>
+            ) : (
+              <p>Indefinido</p>
+            )}
           </td>
         </tr>
         <tr>
           <td className={styles.tableDataName}>Teléfono</td>
           <td className={styles.tableDataInfo}>
-            <a href={"tel:" + cellphone.number}>+{cellphone.string}</a>
+            {cellphone.number ? (
+              <a href={"tel:" + cellphone.number}>+{cellphone.string}</a>
+            ) : (
+              <p>Indefinido</p>
+            )}
           </td>
         </tr>
         <tr>
           <td colSpan={2}>
             <div className={styles.redCont}>
-              <a
-                href={"https://wa.me/" + cellphone.number}
-                target="_blank"
-                title="Whatsapp"
-              >
-                <div className={styles.imgRed}>
-                  <WhatsApp />
-                </div>
-                {/* <img src={WhatsApp} alt="" className={styles.img} /> */}
-              </a>
-              <a
-                href={"https://www.instagram.com/" + instagram}
-                target="_blank"
-                title="Instagram"
-              >
-                <div className={styles.imgRed}>
-                  <Instagram />
-                </div>
-                {/* <img src={Instagram} alt="" className={styles.img} /> */}
-              </a>
+              {cellphone.number ? (
+                <a
+                  href={"https://wa.me/" + cellphone.number}
+                  target="_blank"
+                  title="Whatsapp"
+                >
+                  <div className={styles.imgRed}>
+                    <WhatsApp />
+                  </div>
+                </a>
+              ) : null}
+              {instagram ? (
+                <a
+                  href={"https://www.instagram.com/" + instagram}
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <div className={styles.imgRed}>
+                    <Instagram />
+                  </div>
+                </a>
+              ) : null}
             </div>
           </td>
         </tr>
