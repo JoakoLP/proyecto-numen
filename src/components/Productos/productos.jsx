@@ -9,7 +9,6 @@ const Productos = () => {
 
   // console.log(data);
   const [products, setProducts] = useState(data);
-  const [searchQuery, setSearchQuery] = useState("");
 
   //   Filter
   const filterType = (category) => {
@@ -19,17 +18,6 @@ const Productos = () => {
       })
     );
   };
-
-  const handleSearch = (event) => {
-    const query = event.target.value
-    setSearchQuery(query)
-
-    const searchList = data.filter((item) => {
-      return item.name.toLowerCase().indexOf(query.toLowerCase()) != -1
-    })
-
-    setProducts(searchList)
-  }
 
   const styleBtn =
     "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
@@ -41,25 +29,9 @@ const Productos = () => {
       </h1>
 
       {/* Filter Row */}
-      <div className="flex flex-col pt-4 lg:flex-row">
+      <div className="flex flex-col justify-between pt-4 lg:flex-row">
         {/* Fliter Type */}
         <div>
-          <p className="font-bold text-white mb-2">Busqueda</p>
-          <div className="flex items-center">
-
-            <div className="flex border border-purple-200 rounded">
-              <input id="buscar"
-                type="text"
-                className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none  focus:ring-opacity-40"
-                placeholder="Search..."
-                value={searchQuery}
-                onChange={handleSearch}
-              />
-              <button className="px-4 text-white bg-purple-600 border-l rounded" >
-                Search
-              </button>
-            </div>
-          </div>
           <p className="font-bold text-white">Filtro por Categoria</p>
 
           <div className="flex pt-2 overflow-scroll categBtns flex-nowrap justfiy-between h-min whitespace-nowrap">
@@ -100,7 +72,6 @@ const Productos = () => {
               PC de Escritorio
             </button>
           </div>
-
         </div>
       </div>
 
@@ -110,7 +81,7 @@ const Productos = () => {
           <Product key={product.id} data={product} />
         ))}
       </div>
-    </div >
+    </div>
   );
 };
 

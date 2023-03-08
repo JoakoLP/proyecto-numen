@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider/Slider";
 import Comentary from "./components/Comentary/Comentary";
-import Banner from "./components/Banner/Banner";
 import ComboSec from "./components/Combo";
 import Productos from "./components/Productos/productos";
 import CartProvider from "./contexts/CartProvider";
@@ -26,7 +25,6 @@ function App() {
                 path="/"
                 element={
                   <>
-                    <Banner />
                     <Slider />
                     <ComboSec />
                     <Productos /> <Comentary />
@@ -35,7 +33,6 @@ function App() {
                 }
               />
               <Route path="/about-us" element={<About />} />
-              <Route path="/armaPC-us" element={<Productos />} />
             </Routes>
           </div>
           <Brands />
