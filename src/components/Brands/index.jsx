@@ -12,9 +12,9 @@ function Brands() {
     );
   };
   return (
-    <div className="bg-white h-28">
-      <div className="relative flex flex-row items-center justify-center overflow-x-auto">
-        <div className="relative flex items-center shrink-0 ">
+    <div className="w-full bg-white h-28">
+      <div className="flex flex-row items-center overflow-x-auto buttons">
+        <div className="flex items-center m-auto shrink-0">
           <div className={stylesBrand.divBtn}>
             <button className={stylesBrand.btn} onClick={() => filterBrand("Samsung")}>
               <img
