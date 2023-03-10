@@ -4,7 +4,7 @@ import { Dev, DevCont } from "./style";
 
 const Developers = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-5">
+    <div className="flex flex-col items-center justify-center pb-14">
       <Link to="about-us">
         <h3 className="text-2xl font-bold text-center text-purple-700">
           EQUIPO DE DESARROLLO

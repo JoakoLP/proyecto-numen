@@ -50,7 +50,7 @@ class Carousel extends Component {
         <div className="max-w-[90w] max-h-[500px] items-center justify-center flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute hidden text-3xl text-purple-700 duration-100 opacity-50 cursor-pointer group-hover:block hover:scale-150 hover:opacity-100 left-5 inset-y-1/2"
+            className="absolute hidden text-3xl text-purple-700 duration-100 opacity-50 cursor-pointer group-hover:block active:scale-150 active:opacity-100 lg:hover:scale-150 lg:hover:opacity-100 lg:active:scale-125 left-5 inset-y-1/2"
           />
 
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
@@ -80,11 +80,10 @@ class Carousel extends Component {
             {SliderData.map((element, index) => {
               return (
                 <div
-                  className={
-                    index === this.state.currentSlide
-                      ? "h-2 w-2 bg-purple-700 rounded-full duration-100 scale-125 hover:scale-150 hidden hover:bg-fuchsia-icon group-hover:block mx-2 mb-2 cursor-pointer"
-                      : "h-2 w-2 bg-white rounded-full duration-100 hover:scale-150 mx-2 hidden hover:bg-fuchsia-icon bg-[rgb(196,36,255,0.50)] group-hover:block mb-2 cursor-pointer"
-                  }
+                  className={`${index === this.state.currentSlide
+                    ? " bg-purple-700 scale-125 "
+                    : " bg-[rgb(126,34,206,0.50)] lg:hover:bg-[rgb(126,34,206,0.70)] "
+                    } h-2 w-2 rounded-full duration-100 active:scale-150 lg:hover:scale-150  hidden group-hover:block mx-2 mb-2 cursor-pointer `}
                   key={index}
                   onClick={() => {
                     this.setCurrentSlide(index);
@@ -96,7 +95,7 @@ class Carousel extends Component {
 
           <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute hidden text-3xl text-purple-700 duration-100 opacity-50 cursor-pointer group-hover:block hover:scale-150 hover:opacity-100 hover:drop-shadow-2xl right-5 inset-y-1/2"
+            className="absolute hidden text-3xl text-purple-700 duration-100 opacity-50 cursor-pointer group-hover:block active:scale-150 active:opacity-100 lg:hover:scale-150 lg:hover:opacity-100 lg:active:scale-125 hover:drop-shadow-2xl right-5 inset-y-1/2"
           />
         </div>
       </div>

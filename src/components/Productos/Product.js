@@ -10,7 +10,7 @@ const Product = (props) => {
   return (
     <div
       key={data.id}
-      className="flex sm:flex-col h-min sm:h-[500px] justify-between p-2 duration-150 border border-purple-700 rounded-lg shadow-lg hover:shadow-[rgb(196,36,255,0.25)] hover:scale-105"
+      className="flex sm:flex-col h-min sm:h-[500px] justify-between p-2 duration-150 border border-purple-700 rounded-lg shadow-lg active:shadow-[rgb(196,36,255,0.25)] active:scale-105 lg:hover:shadow-[rgb(196,36,255,0.25)] lg:hover:scale-105"
     >
       <div className="w-[130px] shrink-0 sm:w-auto h-[130px] sm:h-[250px] p-2 flex items-center justify-center sm:mx-1 bg-white rounded-md">
         <img
@@ -32,7 +32,7 @@ const Product = (props) => {
             onClick={() => {
               actions.addToCart(data.id, data.name);
             }}
-            className="bg-[#8a4af3] self-center select-none text-white font-bold text-sm py-1 sm:py-2 px-2 sm:px-4 rounded duration-100 active:scale-110 active:duration-75 hover:bg-purple-900 hover:shadow-inner hover:shadow-neutral-800 w-min whitespace-nowrap"
+            className="bg-[#8a4af3] self-center select-none text-white font-bold text-sm py-1 sm:py-2 px-2 sm:px-4 rounded duration-100 active:scale-110 active:duration-75 lg:hover:bg-purple-900 lg:hover:shadow-inner lg:hover:shadow-neutral-800 active:shadow-inner active:shadow-neutral-800 w-min whitespace-nowrap"
           >
             Agregar al Carrito
           </button>
