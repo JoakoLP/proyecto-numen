@@ -23,16 +23,13 @@ function Combo() {
   ];
 
   const imgComboFinder = (id) => {
-    let newImg = products.find((product) => product.id === id);
-    imgCombo = [...imgCombo, { url: newImg.img }];
+    id.map((imgId) => {
+      let newImg = products.find((product) => product.id === imgId)
+      imgCombo = [...imgCombo, { url: newImg.img }]
+    })
   };
 
-  imgComboFinder(15);
-  imgComboFinder(44);
-  imgComboFinder(42);
-  imgComboFinder(60);
-  imgComboFinder(30);
-  imgComboFinder(58);
+  imgComboFinder([15, 44, 42, 60, 30, 58])
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
