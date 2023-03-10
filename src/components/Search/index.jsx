@@ -48,7 +48,7 @@ const SearchSect = () => {
   };
 
   const styleBtn =
-    "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 hover:bg-purple-900 hover:text-white rounded duration-300 hover:shadow-inner hover:shadow-neutral-800 hover:scale-105";
+    "m-1 mx-1.5 p-1.5 px-3 text-neutral-200 bg-purple-700 active:scale-90 active:duration-75 rounded duration-300 active:bg-purple-900 hover:text-white active:shadow-inner active:shadow-neutral-800 active:scale-105 lg:hover:bg-purple-900 lg:hover:text-white lg:hover:shadow-inner lg:hover:shadow-neutral-800 active:scale-95";
 
   return (
     <div className="max-w-[1640px] m-auto px-1 sm:px-4 py-10">

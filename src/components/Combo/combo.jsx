@@ -23,16 +23,13 @@ function Combo() {
   ];
 
   const imgComboFinder = (id) => {
-    let newImg = products.find((product) => product.id === id);
-    imgCombo = [...imgCombo, { url: newImg.img }];
+    id.map((imgId) => {
+      let newImg = products.find((product) => product.id === imgId)
+      imgCombo = [...imgCombo, { url: newImg.img }]
+    })
   };
 
-  imgComboFinder(15);
-  imgComboFinder(44);
-  imgComboFinder(42);
-  imgComboFinder(60);
-  imgComboFinder(30);
-  imgComboFinder(58);
+  imgComboFinder([15, 44, 42, 60, 30, 58])
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -58,10 +55,10 @@ function Combo() {
         style={{ backgroundImage: `url(${imgCombo[currentIndex].url})` }}
         className="shadow-xl shadow-[rgb(196,36,255,0.25)] duration-300 bg-white bg-center bg-no-repeat bg-contain rounded-md min-h-[200px] sm:min-h-[400px] min-w-[200px] sm:min-w-[400px]"
       ></div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl p-2 bg-transparent hover:scale-150 duration-100 text-[rgb(196,36,255,0.50)] hover:text-fuchsia-icon cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl p-2 active:bg-transparent bg-[rgb(0,0,0,0.2)] rounded-full active:!scale-110 lg:hover:scale-125 duration-100 text-[rgb(196,36,255,0.50)] active:text-fuchsia-icon cursor-pointer">
         <BsChevronCompactLeft onClick={prevImg} size={25} />
       </div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xlp-2 bg-transparent hover:scale-150 duration-100 text-[rgb(196,36,255,0.50)] hover:text-fuchsia-icon cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl p-2 active:bg-transparent bg-[rgb(0,0,0,0.2)] rounded-full active:!scale-110 lg:hover:scale-125 duration-100 text-[rgb(196,36,255,0.50)] active:text-fuchsia-icon cursor-pointer">
         <BsChevronCompactRight onClick={nextImg} size={25} />
       </div>
       <div className="hidden group-hover:flex absolute bottom-0 hover:rounded-2xl text-[rgb(196,36,255,0.50)] justify-center p-0.5 my-2">
@@ -69,7 +66,7 @@ function Combo() {
           <div
             key={imgIndex}
             onClick={() => goToImg(imgIndex)}
-            className="w-full h-auto text-2xl cursor-pointer m-[1px] rounded-2xl duration-100 hover:scale-125 hover:text-fuchsia-icon"
+            className="w-full h-auto text-2xl cursor-pointer m-[1px] rounded-2xl duration-100 active:scale-125 active:text-fuchsia-icon lg:hover:scale-125 lg:hover:text-fuchsia-icon"
           >
             <RxDotFilled />
           </div>
